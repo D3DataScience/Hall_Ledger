@@ -1480,7 +1480,31 @@ h3 {
     font-size: 21px;
   }
 
+  .table-shell {
+    padding: 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .data-table {
-    font-size: 13px;
+    min-width: 680px;
+    table-layout: auto;
+    font-size: 12px;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 7px 8px;
+  }
+
+  .season-stats-table {
+    min-width: 980px;
+  }
+
+  .status-pill {
+    padding: 3px 6px;
+    font-size: 9px;
+    letter-spacing: 0.02em;
+    line-height: 1.15;
   }
 }
