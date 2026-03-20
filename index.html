@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Public homepage for Hall Ledger. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hall Ledger</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="js/player-index.js"></script>
+  <script defer src="js/player-search.js"></script>
+  <script defer src="js/home-featured-players.js"></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <!-- Global site navigation and search. -->
+      <nav class="topbar">
+        <a class="brand-lockup" href="./index.html">
+          <span class="brand">Hall Ledger</span>
+          <span class="brand-tagline">A baseball Hall of Fame reference</span>
+        </a>
+        <div class="topbar-actions">
+          <div class="topbar-links">
+            <a class="topbar-link" href="./players/index.html#hall-player-search">Player Directory</a>
+            <a class="topbar-link" href="./players/hall_index.html#hall-player-search">Official Inductions Directory</a>
+            <a class="topbar-link" href="./milestone-players/milestone_index.html">Statistical Inductions</a>
+            <a class="topbar-link" href="./active-players/active_index.html">Active Inductions</a>
+            <a class="topbar-link" href="./retired-players/retired_index.html">Corrective Inductions</a>
+          </div>
+          <form class="topbar-search" data-global-player-search aria-label="Find a player anywhere on Hall Ledger">
+            <input class="topbar-search-input" type="search" placeholder="Find any player" autocomplete="off">
+            <button class="topbar-search-button" type="submit">Go</button>
+            <div class="topbar-search-results" hidden></div>
+          </form>
+        </div>
+      </nav>
+
+      <!-- Homepage title block. -->
+      <div class="hero-copy">
+        <p class="eyebrow">Featured Players</p>
+        <h1>Hall Ledger</h1>
+        <p class="lede">A rotating selection featuring two official inductions, two statistical inductions, one active induction, and one corrective induction.</p>
+      </div>
+
+      <!-- Top-level site counts for the four induction lanes. -->
+      <section class="snapshot-grid" aria-label="Hall snapshot">
+        <article class="snapshot-card">
+          <p class="snapshot-label">Hall Ledger Total</p>
+          <p class="snapshot-value">360</p>
+          <p class="snapshot-note">The full Hall Ledger player total across all four induction lanes.</p>
+        </article>
+        <article class="snapshot-card">
+          <p class="snapshot-label">Official Inductions</p>
+          <p class="snapshot-value">282</p>
+          <p class="snapshot-note">Players who have been officially inducted into the National Baseball Hall of Fame.</p>
+        </article>
+        <article class="snapshot-card">
+          <p class="snapshot-label">Statistical Inductions</p>
+          <p class="snapshot-value">15</p>
+          <p class="snapshot-note">Players added through Hall Ledger&#39;s statistical standards.</p>
+        </article>
+        <article class="snapshot-card">
+          <p class="snapshot-label">Active Inductions</p>
+          <p class="snapshot-value">22</p>
+          <p class="snapshot-note">Active players whose careers already meet Hall Ledger standards.</p>
+        </article>
+        <article class="snapshot-card">
+          <p class="snapshot-label">Corrective Inductions</p>
+          <p class="snapshot-value">41</p>
+          <p class="snapshot-note">Retired players included through Hall Ledger&#39;s corrective lane.</p>
+        </article>
+      </section>
+    </header>
+
+    <main>
+      <section class="section">
+        <!-- Rotating featured-player grid on the homepage. -->
+        <div class="future-grid featured-player-grid" data-featured-player-grid></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
