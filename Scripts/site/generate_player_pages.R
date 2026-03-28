@@ -123,11 +123,40 @@ infer_year_from_timeline <- function(team_timeline, which = c("start", "end")) {
 is_negro_leagues_player <- function(player) {
   player_id <- safe_value_one(player$playerID, "")
   context <- safe_value_one(player$player_context, "")
-  teams_text <- paste(split_pipe_values(player$teams), collapse = " | ")
+  teams_text <- paste(
+    c(
+      split_pipe_values(safe_value_one(player$teams, "")),
+      split_pipe_values(safe_value_one(player$team_timeline, "")),
+      split_pipe_values(safe_value_one(player$team_card_timeline, ""))
+    ),
+    collapse = " | "
+  )
+
+  negro_team_pattern <- paste(
+    c(
+      "Kansas City Monarchs",
+      "Homestead Grays",
+      "Newark Eagles",
+      "Pittsburgh Crawfords",
+      "Chicago American Giants",
+      "Birmingham Black Barons",
+      "Cuban Stars",
+      "Lincoln Giants",
+      "Bacharach Giants",
+      "Hilldale",
+      "Elite Giants",
+      "St\\. Louis Stars",
+      "Detroit Stars",
+      "Philadelphia Stars",
+      "Indianapolis ABCs",
+      "Baltimore Black Sox"
+    ),
+    collapse = "|"
+  )
 
   isTRUE(str_ends(player_id, "99")) ||
     str_detect(context, regex("Negro|Black baseball", ignore_case = TRUE)) ||
-    str_detect(teams_text, regex("Monarchs|Black Sox|American Giants|ABCs|Bacharach|Grays|Elite Giants|Stars|Cuban Stars|Lincoln Giants|Potomacs|Crawfords", ignore_case = TRUE))
+    str_detect(teams_text, regex(negro_team_pattern, ignore_case = TRUE))
 }
 
 display_year_value <- function(player, field = c("debut", "finalGame")) {
@@ -736,8 +765,8 @@ active_players <- if (file.exists("data/active_hall_candidates.csv")) {
 } else {
   tibble()
 }
-retired_players <- if (file.exists("data/retired_passed_over_players.csv")) {
-  read_csv("data/retired_passed_over_players.csv", show_col_types = FALSE) %>% mutate(status = "Corrective Induction") %>% arrange(name)
+retired_players <- if (file.exists("data/corrective_induction_players.csv")) {
+  read_csv("data/corrective_induction_players.csv", show_col_types = FALSE) %>% mutate(status = "Corrective Induction") %>% arrange(name)
 } else {
   tibble()
 }
@@ -766,14 +795,16 @@ active_status_value <- function(df) {
   value
 }
 
-passed_over_status_value <- function(df) {
-  if ("passed_over_status" %in% names(df)) {
+corrective_status_value <- function(df) {
+  if ("corrective_status" %in% names(df)) {
+    value <- as.character(df$corrective_status)
+  } else if ("passed_over_status" %in% names(df)) {
     value <- as.character(df$passed_over_status)
   } else {
-    value <- rep("Passed-Over Player", nrow(df))
+    value <- rep("Corrective Induction", nrow(df))
   }
 
-  value[is.na(value) | value == ""] <- "Passed-Over Player"
+  value[is.na(value) | value == ""] <- "Corrective Induction"
   value
 }
 
@@ -833,6 +864,25 @@ build_team_list <- function(team_timeline) {
     "detail-list detail-list-compact"
   }
   paste0('<ul class="', list_class, '"><li>', paste(html_escape(teams), collapse = '</li><li>'), '</li></ul>')
+}
+
+resolve_team_list_text <- function(player) {
+  preferred_values <- split_pipe_values(safe_value_one(player$team_card_timeline, ""))
+  if (length(preferred_values) > 0) {
+    return(paste(preferred_values, collapse = " | "))
+  }
+
+  timeline_values <- split_pipe_values(safe_value_one(player$team_timeline, ""))
+  if (length(timeline_values) > 0) {
+    return(paste(timeline_values, collapse = " | "))
+  }
+
+  team_values <- split_pipe_values(safe_value_one(player$teams, ""))
+  if (length(team_values) > 0) {
+    return(paste(team_values, collapse = " | "))
+  }
+
+  ""
 }
 
 build_year_note <- function(player, debut_display, final_display) {
@@ -1104,8 +1154,11 @@ build_retirement_note <- function(player) {
   paste0('<p class="source-note recent-retirement-note">', html_escape(player$name), ' retired recently and is expected to appear on a future Hall of Fame ballot.</p>')
 }
 
-build_passed_over_status_note <- function(player) {
-  note_text <- safe_value_one(player$passed_over_note, "")
+build_corrective_status_note <- function(player) {
+  note_text <- safe_value_one(player$corrective_note, "")
+  if (note_text == "" && "passed_over_note" %in% names(player)) {
+    note_text <- safe_value_one(player$passed_over_note, "")
+  }
   if (note_text == "") return("")
 
   note_sentences <- str_split(note_text, "(?<=\\.)\\s+", simplify = FALSE)[[1]]
@@ -1281,7 +1334,7 @@ build_page_html <- function(player, page_prefix, side_copy, recent_note = "") {
     build_nav(page_prefix),
     '<div class="player-card-header">',
     build_image_panel(player, page_prefix),
-    '<div class="player-card-main"><h1>', html_escape(player$name), '</h1><p class="player-years">Active years: ', html_escape(debut_display), year_marker, ' to ', html_escape(final_display), year_marker, '</p>', year_note_html, player_meta_line_html, '<div class="player-team-block"><p class="player-card-label">Teams</p>', build_team_list(if ("team_card_timeline" %in% names(player)) player$team_card_timeline else player$team_timeline), '</div></div>',
+      '<div class="player-card-main"><h1>', html_escape(player$name), '</h1><p class="player-years">Active years: ', html_escape(debut_display), year_marker, ' to ', html_escape(final_display), year_marker, '</p>', year_note_html, player_meta_line_html, '<div class="player-team-block"><p class="player-card-label">Teams</p>', build_team_list(resolve_team_list_text(player)), '</div></div>',
     '<aside class="player-card-side">', side_copy_html, build_player_club_chips(player), career_war_html, '</aside></div>',
     header_honors_html,
     recent_note,
@@ -1320,7 +1373,7 @@ write_retired_page <- function(player) {
       player,
       "..",
       "Corrective Induction",
-      build_passed_over_status_note(player)
+      build_corrective_status_note(player)
     ),
     file_name
   )
@@ -1328,8 +1381,11 @@ write_retired_page <- function(player) {
 
 hall_rows <- hall_players %>%
   mutate(
-    negro_player = str_ends(playerID, "99") |
-      str_detect(coalesce(teams, ""), regex("Monarchs|Black Sox|American Giants|ABCs|Bacharach|Grays|Elite Giants|Stars|Cuban Stars|Lincoln Giants|Potomacs|Crawfords", ignore_case = TRUE)),
+      negro_player = str_ends(playerID, "99") |
+        str_detect(
+          coalesce(team_timeline, coalesce(teams, "")),
+          regex("Kansas City Monarchs|Homestead Grays|Newark Eagles|Pittsburgh Crawfords|Chicago American Giants|Birmingham Black Barons|Cuban Stars|Lincoln Giants|Bacharach Giants|Hilldale|Elite Giants|St\\. Louis Stars|Detroit Stars|Philadelphia Stars|Indianapolis ABCs|Baltimore Black Sox", ignore_case = TRUE)
+        ),
     inferred_debut = vapply(team_timeline, infer_year_from_timeline, character(1), which = "start"),
     inferred_final = vapply(team_timeline, infer_year_from_timeline, character(1), which = "end"),
     primary_position_display = if_else(is.na(primary_position) | as.character(primary_position) == "", "Unknown", as.character(primary_position)),
@@ -1460,7 +1516,7 @@ retired_directory_rows <- if (nrow(retired_players) > 0) {
   retired_players %>%
     filter(include_in_directory_value(cur_data())) %>%
     mutate(
-      case_display = passed_over_status_value(cur_data()),
+      case_display = corrective_status_value(cur_data()),
       primary_position_display = if_else(is.na(primary_position) | as.character(primary_position) == "", "Unknown", as.character(primary_position)),
       debut_display = if_else(is.na(debut) | as.character(debut) == "", "Unknown", as.character(debut)),
       final_game_display = if_else(is.na(finalGame) | as.character(finalGame) == "", "Unknown", as.character(finalGame))
@@ -1469,8 +1525,8 @@ retired_directory_rows <- if (nrow(retired_players) > 0) {
       sort_name = name,
       row_html = paste0(
         '<tr><td><a href="', playerID, '.html">', html_escape(name), '</a></td>',
-        '<td><span class="status-pill status-passed-over">Corrective Induction</span></td>',
-        '<td>', html_escape(if_else(is.na(passed_over_class_year), "Manual Review", paste0("Hall Ledger Class of ", as.character(passed_over_class_year)))), '</td>',
+        '<td><span class="status-pill status-corrective">Corrective Induction</span></td>',
+        '<td>', html_escape(if_else(is.na(corrective_class_year), "Manual Review", paste0("Hall Ledger Class of ", as.character(corrective_class_year)))), '</td>',
         '<td>', html_escape(primary_position_display), '</td>',
         '<td>', html_escape(debut_display), '</td>',
         '<td>', html_escape(final_game_display), '</td></tr>'
@@ -1485,7 +1541,7 @@ retired_rows <- if (nrow(retired_players) > 0) {
   retired_players %>%
     filter(include_in_directory_value(cur_data())) %>%
     mutate(
-      case_display = passed_over_status_value(cur_data()),
+      case_display = corrective_status_value(cur_data()),
       primary_position_display = if_else(is.na(primary_position) | as.character(primary_position) == "", "Unknown", as.character(primary_position)),
       debut_display = if_else(is.na(debut) | as.character(debut) == "", "Unknown", as.character(debut)),
       final_game_display = if_else(is.na(finalGame) | as.character(finalGame) == "", "Unknown", as.character(finalGame))
@@ -1494,8 +1550,8 @@ retired_rows <- if (nrow(retired_players) > 0) {
       sort_name = name,
       row_html = paste0(
         '<tr><td><a href="../retired-players/', playerID, '.html">', html_escape(name), '</a></td>',
-        '<td><span class="status-pill status-passed-over">Corrective Induction</span></td>',
-        '<td>', html_escape(if_else(is.na(passed_over_class_year), "Manual Review", paste0("Hall Ledger Class of ", as.character(passed_over_class_year)))), '</td>',
+        '<td><span class="status-pill status-corrective">Corrective Induction</span></td>',
+        '<td>', html_escape(if_else(is.na(corrective_class_year), "Manual Review", paste0("Hall Ledger Class of ", as.character(corrective_class_year)))), '</td>',
         '<td>', html_escape(primary_position_display), '</td>',
         '<td>', html_escape(debut_display), '</td>',
         '<td>', html_escape(final_game_display), '</td></tr>'
@@ -1563,7 +1619,7 @@ search_index <- bind_rows(
     name,
     playerID,
     status = "Corrective Induction",
-    note = passed_over_status_value(cur_data()),
+    note = corrective_status_value(cur_data()),
     path = paste0("retired-players/", playerID, ".html")
   )
 ) %>% arrange(name)

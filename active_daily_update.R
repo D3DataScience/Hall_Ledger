@@ -1,10 +1,8 @@
-# Daily updater for active players, current-season FanGraphs refreshes, and regenerated player pages.
+# One-step active-player update for Hall Ledger.
 args <- commandArgs(trailingOnly = TRUE)
 
-# Project root for the daily update run.
 project_root <- getwd()
 
-# Shared sourced-script runner.
 run_script <- function(path) {
   message("")
   message("Running ", path)
@@ -12,16 +10,21 @@ run_script <- function(path) {
   message("Finished ", path)
 }
 
-# Daily update steps for active-player refreshes.
+suppressWarnings({
+  Sys.setenv(
+    HALL_LEDGER_INCLUDE_CURRENT_SEASON = "1",
+    HALL_LEDGER_REFRESH_CURRENT_SEASON = "1"
+  )
+})
+
 scripts_to_run <- c(
   file.path("Scripts", "data", "build_active_hall_candidates.R"),
-  file.path("Scripts", "data", "refresh_current_fangraphs_season.R"),
+  file.path("Scripts", "data", "build_site_data_fangraphs_api.R"),
   file.path("Scripts", "site", "generate_player_pages.R")
 )
 
-message("Hall Ledger active update starting from ", project_root)
+message("Hall Ledger active daily update starting from ", project_root)
 
-# Run each daily update script in order.
 for (script_path in scripts_to_run) {
   if (!file.exists(script_path)) {
     stop("Required script not found: ", script_path, call. = FALSE)
@@ -31,4 +34,4 @@ for (script_path in scripts_to_run) {
 }
 
 message("")
-message("Hall Ledger active update complete.")
+message("Hall Ledger active daily update complete.")

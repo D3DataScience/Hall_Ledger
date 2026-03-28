@@ -1,4 +1,5 @@
 playerID,name,status,career_plate_appearances,career_innings_outs,career_innings_pitched,detection_method,detection_note
+spaldal01,Al Spalding,Corrective Induction,NA,NA,NA,manual_override,Al Spalding manual two-way inclusion
 ruthba01,Babe Ruth,Official Induction,NA,NA,NA,manual_override,Babe Ruth manual two-way inclusion
 roganbu99,Bullet Rogan,Official Induction,NA,NA,NA,manual_override,Bullet Rogan manual two-way inclusion
 wardjo01,John Ward,Official Induction,NA,NA,NA,manual_override,John Montgomery Ward manual two-way inclusion

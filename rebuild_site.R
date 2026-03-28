@@ -19,7 +19,7 @@ scripts_to_run <- c(
   file.path("Scripts", "data", "hof_data_setup.R"),
   file.path("Scripts", "data", "build_non_hof_milestone_players.R"),
   file.path("Scripts", "data", "build_active_hall_candidates.R"),
-  file.path("Scripts", "data", "build_retired_passed_over_players.R"),
+  file.path("Scripts", "data", "build_corrective_induction_players.R"),
   file.path("Scripts", "data", "build_site_data_fangraphs_api.R")
 )
 

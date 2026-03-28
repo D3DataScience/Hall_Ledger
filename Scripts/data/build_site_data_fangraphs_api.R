@@ -157,7 +157,66 @@ ensure_fg_cache_columns <- function(df, stats = c("bat", "pit")) {
     df[[col_name]] <- NA
   }
 
-  df[, required_cols]
+  df <- df[, required_cols]
+
+  character_cols <- intersect(
+    c(
+      "player_name",
+      "player_name_key",
+      "fg_playerid",
+      "team",
+      "innings_pitched"
+    ),
+    names(df)
+  )
+  integer_cols <- intersect(
+    c(
+      "season",
+      "age",
+      "games",
+      "plate_appearances",
+      "at_bats",
+      "hits",
+      "home_runs",
+      "runs_batted_in",
+      "runs",
+      "stolen_bases",
+      "games_started",
+      "wins",
+      "losses",
+      "saves",
+      "hits_allowed",
+      "walks_allowed",
+      "strikeouts"
+    ),
+    names(df)
+  )
+  numeric_cols <- intersect(
+    c(
+      "batting_average",
+      "on_base_percentage",
+      "slugging_percentage",
+      "on_base_plus_slugging",
+      "fwar",
+      "earned_run_average",
+      "whip"
+    ),
+    names(df)
+  )
+
+  for (col_name in character_cols) {
+    df[[col_name]] <- as.character(df[[col_name]])
+  }
+
+  for (col_name in integer_cols) {
+    df[[col_name]] <- suppressWarnings(as.integer(df[[col_name]]))
+  }
+
+  for (col_name in numeric_cols) {
+    df[[col_name]] <- suppressWarnings(as.numeric(df[[col_name]]))
+  }
+
+  df
 }
 
 normalize_fg_batting <- function(df) {
@@ -309,7 +368,7 @@ player_pool <- bind_rows(
   read_player_source("data/hall_of_fame_lahman_players.csv", "Official Induction"),
   read_player_source("data/non_hof_milestone_players.csv", "Statistical Induction"),
   read_player_source("data/active_hall_candidates.csv", "Active Induction"),
-  read_player_source("data/retired_passed_over_players.csv", "Passed-Over Induction")
+  read_player_source("data/corrective_induction_players.csv", "Corrective Induction")
 ) %>%
   filter(!is.na(playerID), playerID != "", !is.na(name), name != "") %>%
   distinct(playerID, .keep_all = TRUE) %>%

@@ -30,9 +30,9 @@ active_players <- if (file.exists("data/active_hall_candidates.csv")) {
   tibble(playerID = character(), name = character(), source_group = character(), bbref_url = character())
 }
 
-retired_players <- if (file.exists("data/retired_passed_over_players.csv")) {
-  read_csv("data/retired_passed_over_players.csv", show_col_types = FALSE) %>%
-    transmute(playerID, name, source_group = "Passed-Over Players", bbref_url)
+retired_players <- if (file.exists("data/corrective_induction_players.csv")) {
+  read_csv("data/corrective_induction_players.csv", show_col_types = FALSE) %>%
+    transmute(playerID, name, source_group = "Corrective Inductions", bbref_url)
 } else {
   tibble(playerID = character(), name = character(), source_group = character(), bbref_url = character())
 }

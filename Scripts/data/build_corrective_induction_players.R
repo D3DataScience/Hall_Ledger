@@ -22,15 +22,15 @@ format_average <- function(num, den, digits = 3) {
   ifelse(den > 0, round(num / den, digits), NA_real_)
 }
 
-seed_path <- "data/retired_passed_over_players_seed.csv"
+seed_path <- "data/corrective_induction_players_seed.csv"
 if (!file.exists(seed_path)) {
   write_csv(
     tibble(
       playerID = character(),
       name = character(),
-      passed_over_status = character(),
-      passed_over_note = character(),
-      passed_over_class_year = integer(),
+      corrective_status = character(),
+      corrective_note = character(),
+      corrective_class_year = integer(),
       include_in_directory = logical()
     ),
     seed_path
@@ -39,18 +39,18 @@ if (!file.exists(seed_path)) {
 
 retired_seed <- read_csv(seed_path, show_col_types = FALSE) %>%
   {
-    if (!("passed_over_status" %in% names(.))) .$passed_over_status <- NA_character_
-    if (!("passed_over_note" %in% names(.))) .$passed_over_note <- NA_character_
-    if (!("passed_over_class_year" %in% names(.))) .$passed_over_class_year <- NA_integer_
+    if (!("corrective_status" %in% names(.))) .$corrective_status <- if ("passed_over_status" %in% names(.)) as.character(.$passed_over_status) else NA_character_
+    if (!("corrective_note" %in% names(.))) .$corrective_note <- if ("passed_over_note" %in% names(.)) as.character(.$passed_over_note) else NA_character_
+    if (!("corrective_class_year" %in% names(.))) .$corrective_class_year <- if ("passed_over_class_year" %in% names(.)) suppressWarnings(as.integer(.$passed_over_class_year)) else NA_integer_
     if (!("include_in_directory" %in% names(.))) .$include_in_directory <- TRUE
     .
   } %>%
   mutate(
     playerID = as.character(playerID),
     name = as.character(name),
-    passed_over_status = coalesce(as.character(passed_over_status), "Passed-Over Player"),
-    passed_over_note = coalesce(as.character(passed_over_note), ""),
-    passed_over_class_year = suppressWarnings(as.integer(passed_over_class_year)),
+    corrective_status = coalesce(as.character(corrective_status), "Corrective Induction"),
+    corrective_note = coalesce(as.character(corrective_note), ""),
+    corrective_class_year = suppressWarnings(as.integer(corrective_class_year)),
     include_in_directory = if_else(is.na(include_in_directory), TRUE, as.logical(include_in_directory))
   ) %>%
   filter(!is.na(playerID), playerID != "") %>%
@@ -241,17 +241,17 @@ retired_players <- retired_seed %>%
   mutate(
     finalGame = coalesce(finalGame, unname(final_year_overrides[playerID])),
     player_context = "Major League Baseball",
-    year_note = "Years taken from Lahman player data. Passed-over status is a manual Hall Ledger designation."
+    year_note = "Years taken from Lahman player data. Corrective induction is a manual Hall Ledger designation."
   ) %>%
   select(
     playerID, name, birthYear, debut, finalGame, bbref_url, player_context, year_note,
     primary_position, positions, teams, team_timeline, batting_games, hits, home_runs,
     runs_batted_in, stolen_bases, batting_average, pitching_games, strikeouts, wins,
-    losses, saves, innings_pitched, earned_run_average, passed_over_status,
-    passed_over_note, passed_over_class_year, include_in_directory, major_awards, all_star_selections, title_awards
+    losses, saves, innings_pitched, earned_run_average, corrective_status,
+    corrective_note, corrective_class_year, include_in_directory, major_awards, all_star_selections, title_awards
   ) %>%
   arrange(name)
 
-write_csv(retired_players, "data/retired_passed_over_players.csv")
+write_csv(retired_players, "data/corrective_induction_players.csv")
 
-message("Wrote data/retired_passed_over_players.csv")
+message("Wrote data/corrective_induction_players.csv")
