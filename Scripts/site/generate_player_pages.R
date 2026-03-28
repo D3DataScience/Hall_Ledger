@@ -1565,6 +1565,12 @@ directory_rows <- bind_rows(hall_rows, milestone_rows, active_rows, retired_rows
   arrange(sort_name) %>%
   pull(row_html)
 
+official_count <- nrow(hall_players)
+milestone_count <- nrow(milestone_players)
+active_count <- nrow(active_players)
+corrective_count <- nrow(retired_players %>% filter(include_in_directory_value(cur_data())))
+total_count <- official_count + milestone_count + active_count + corrective_count
+
 hall_directory_html <- paste0(
   '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Official Inductions Directory | Hall Ledger</title><link rel="stylesheet" href="../styles.css"><script defer src="../js/table-sort.js"></script><script defer src="../js/player-index.js"></script><script defer src="../js/player-search.js"></script></head><body><div class="page-shell"><header class="hero">', build_nav(".."),
   '<div class="hero-copy"><p class="eyebrow">Official Inductions</p><h1>Official Inductions Directory</h1><p class="lede">Every officially inducted player page currently included on Hall Ledger.</p><p class="section-copy">This directory includes only players who have been officially inducted into the National Baseball Hall of Fame.</p></div></header><main><section class="section"><div class="table-shell"><table class="data-table"><thead><tr><th>Player</th><th>Status</th><th>Class</th><th>Primary Position</th><th>Debut</th><th>Final Year</th></tr></thead><tbody>',
@@ -1604,6 +1610,20 @@ retired_directory_html <- paste0(
   '</tbody></table></div></section></main></div></body></html>'
 )
 writeLines(retired_directory_html, "retired-players/retired_index.html")
+
+home_html <- paste0(
+  '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Hall Ledger</title><link rel="stylesheet" href="styles.css"><script defer src="js/player-index.js"></script><script defer src="js/player-search.js"></script><script defer src="js/home-featured-players.js"></script></head><body><div class="page-shell"><header class="hero">',
+  build_nav("."),
+  '<div class="hero-copy"><p class="eyebrow">Featured Players</p><h1>Hall Ledger</h1><p class="lede">A rotating selection featuring two official inductions, two statistical inductions, one active induction, and one corrective induction.</p></div>',
+  '<section class="snapshot-grid" aria-label="Hall snapshot">',
+  '<article class="snapshot-card"><p class="snapshot-label">Hall Ledger Total</p><p class="snapshot-value">', total_count, '</p><p class="snapshot-note">The full Hall Ledger player total across all four induction lanes.</p></article>',
+  '<article class="snapshot-card"><p class="snapshot-label">Official Inductions</p><p class="snapshot-value">', official_count, '</p><p class="snapshot-note">Players who have been officially inducted into the National Baseball Hall of Fame.</p></article>',
+  '<article class="snapshot-card"><p class="snapshot-label">Statistical Inductions</p><p class="snapshot-value">', milestone_count, '</p><p class="snapshot-note">Players added through Hall Ledger&#39;s statistical standards.</p></article>',
+  '<article class="snapshot-card"><p class="snapshot-label">Active Inductions</p><p class="snapshot-value">', active_count, '</p><p class="snapshot-note">Active players whose careers already meet Hall Ledger standards.</p></article>',
+  '<article class="snapshot-card"><p class="snapshot-label">Corrective Inductions</p><p class="snapshot-value">', corrective_count, '</p><p class="snapshot-note">Retired players included through Hall Ledger&#39;s corrective lane.</p></article>',
+  '</section></header><main><section class="section"><div class="future-grid featured-player-grid" data-featured-player-grid></div></section></main></div></body></html>'
+)
+writeLines(home_html, "index.html")
 
 search_index <- bind_rows(
   hall_players %>% transmute(name, playerID, status = "Official Induction", note = paste0("Inducted ", induction_year), path = paste0("players/", playerID, ".html")),
