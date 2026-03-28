@@ -23,34 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const tbody = table.querySelector("tbody");
     if (!tbody) return;
 
-    const getGroupedRows = () => {
-      // Keep season detail rows attached to their total rows while sorting.
-      const rows = Array.from(tbody.querySelectorAll("tr"));
-      const grouped = [];
-      const seenGroups = new Set();
-
-      rows.forEach((row) => {
-        const groupId = row.dataset.group;
-        const groupRole = row.dataset.groupRole;
-
-        if (!groupId) {
-          grouped.push({ keyRow: row, rows: [row] });
-          return;
-        }
-
-        if (groupRole === "detail" && seenGroups.has(groupId)) {
-          return;
-        }
-
-        const groupRows = rows.filter((candidate) => candidate.dataset.group === groupId);
-        const totalRow = groupRows.find((candidate) => candidate.dataset.groupRole === "total") || groupRows[0];
-        seenGroups.add(groupId);
-        grouped.push({ keyRow: totalRow, rows: groupRows });
-      });
-
-      return grouped;
-    };
-
     headers.forEach((header, index) => {
       header.addEventListener("click", () => {
         // Sort the table by the clicked header.
@@ -61,15 +33,15 @@ document.addEventListener("DOMContentLoaded", () => {
             : "";
         const nextDirection = currentDirection === "asc" ? "desc" : "asc";
         const type = header.dataset.sortType || "text";
-        const rowGroups = getGroupedRows();
+        const rows = Array.from(tbody.querySelectorAll("tr"));
 
         headers.forEach((otherHeader) => {
           otherHeader.classList.remove("sort-asc", "sort-desc");
         });
 
-        rowGroups.sort((a, b) => {
-          const aValue = parseValue(a.keyRow.children[index]?.textContent || "", type);
-          const bValue = parseValue(b.keyRow.children[index]?.textContent || "", type);
+        rows.sort((a, b) => {
+          const aValue = parseValue(a.children[index]?.textContent || "", type);
+          const bValue = parseValue(b.children[index]?.textContent || "", type);
 
           if (aValue < bValue) return nextDirection === "asc" ? -1 : 1;
           if (aValue > bValue) return nextDirection === "asc" ? 1 : -1;
@@ -77,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         header.classList.add(nextDirection === "asc" ? "sort-asc" : "sort-desc");
-        tbody.append(...rowGroups.flatMap((group) => group.rows));
+        tbody.append(...rows);
       });
     });
   });
