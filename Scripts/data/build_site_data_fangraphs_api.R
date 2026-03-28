@@ -122,11 +122,6 @@ cache_path_for <- function(stats = c("bat", "pit"), season) {
   file.path("data", "fangraphs_cache", paste0("fangraphs_", stats, "_", season, ".csv"))
 }
 
-build_year_chunks <- function(years, chunk_size = 10L) {
-  if (length(years) == 0) return(list())
-  split(years, ceiling(seq_along(years) / chunk_size))
-}
-
 write_chunk_to_year_cache <- function(df, stats = c("bat", "pit"), years) {
   stats <- match.arg(stats)
   normalizer <- if (stats == "bat") normalize_fg_batting else normalize_fg_pitching
@@ -403,44 +398,20 @@ message("Building FanGraphs batting season cache for ", length(years_to_pull), "
 walk(years_to_pull[!years_to_pull %in% missing_batting_years], function(year_value) {
   message("  batting ", year_value, " (cached)")
 })
-walk(build_year_chunks(missing_batting_years, fangraphs_chunk_size), function(year_chunk) {
-  start_year <- min(year_chunk)
-  end_year <- max(year_chunk)
-  message("  batting ", start_year, "-", end_year, " (fetch chunk)")
-
-  chunk_rows <- fetch_fg_leaders("bat", season = end_year, season_start = start_year)
-  if (nrow(chunk_rows) > 0) {
-    write_chunk_to_year_cache(chunk_rows, "bat", year_chunk)
-    return(invisible(NULL))
-  }
-
-  walk(year_chunk, function(year_value) {
-    message("    batting ", year_value, " (fallback)")
-    season_rows <- fetch_fg_leaders("bat", season = year_value, season_start = year_value) %>% normalize_fg_batting()
-    write_csv(season_rows, cache_path_for("bat", year_value))
-  })
+walk(missing_batting_years, function(year_value) {
+  message("  batting ", year_value, " (fetch)")
+  season_rows <- fetch_fg_leaders("bat", season = year_value, season_start = year_value) %>% normalize_fg_batting()
+  write_csv(season_rows, cache_path_for("bat", year_value))
 })
 
 message("Building FanGraphs pitching season cache for ", length(years_to_pull), " years...")
 walk(years_to_pull[!years_to_pull %in% missing_pitching_years], function(year_value) {
   message("  pitching ", year_value, " (cached)")
 })
-walk(build_year_chunks(missing_pitching_years, fangraphs_chunk_size), function(year_chunk) {
-  start_year <- min(year_chunk)
-  end_year <- max(year_chunk)
-  message("  pitching ", start_year, "-", end_year, " (fetch chunk)")
-
-  chunk_rows <- fetch_fg_leaders("pit", season = end_year, season_start = start_year)
-  if (nrow(chunk_rows) > 0) {
-    write_chunk_to_year_cache(chunk_rows, "pit", year_chunk)
-    return(invisible(NULL))
-  }
-
-  walk(year_chunk, function(year_value) {
-    message("    pitching ", year_value, " (fallback)")
-    season_rows <- fetch_fg_leaders("pit", season = year_value, season_start = year_value) %>% normalize_fg_pitching()
-    write_csv(season_rows, cache_path_for("pit", year_value))
-  })
+walk(missing_pitching_years, function(year_value) {
+  message("  pitching ", year_value, " (fetch)")
+  season_rows <- fetch_fg_leaders("pit", season = year_value, season_start = year_value) %>% normalize_fg_pitching()
+  write_csv(season_rows, cache_path_for("pit", year_value))
 })
 
 batting_seasons <- map_dfr(years_to_pull, function(year_value) {
