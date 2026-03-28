@@ -1565,10 +1565,20 @@ directory_rows <- bind_rows(hall_rows, milestone_rows, active_rows, retired_rows
   arrange(sort_name) %>%
   pull(row_html)
 
-official_count <- nrow(hall_players)
-milestone_count <- nrow(milestone_players)
-active_count <- nrow(active_players)
-corrective_count <- nrow(retired_players %>% filter(include_in_directory_value(cur_data())))
+count_generated_pages <- function(path, index_files = character()) {
+  if (!dir.exists(path)) {
+    return(0L)
+  }
+
+  files <- list.files(path, pattern = "[.]html$", full.names = FALSE)
+  files <- setdiff(files, index_files)
+  length(files)
+}
+
+official_count <- count_generated_pages("players", c("index.html", "hall_index.html"))
+milestone_count <- count_generated_pages("milestone-players", "milestone_index.html")
+active_count <- count_generated_pages("active-players", "active_index.html")
+corrective_count <- count_generated_pages("retired-players", "retired_index.html")
 total_count <- official_count + milestone_count + active_count + corrective_count
 
 hall_directory_html <- paste0(
