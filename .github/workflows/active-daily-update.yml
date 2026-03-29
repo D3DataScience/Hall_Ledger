@@ -25,9 +25,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: data/fangraphs_cache
-          key: fangraphs-cache-${{ runner.os }}-${{ github.run_id }}
+          key: fangraphs-cache-v2-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
-            fangraphs-cache-${{ runner.os }}-
+            fangraphs-cache-v2-${{ runner.os }}-
 
       - name: Install R packages
         run: |
