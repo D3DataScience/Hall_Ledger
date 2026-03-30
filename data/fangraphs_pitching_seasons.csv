@@ -327,7 +327,7 @@ chapmar01,Aroldis Chapman,Active Induction,P,2022,Aroldis Chapman,NYY,34,43,0,4,
 chapmar01,Aroldis Chapman,Active Induction,P,2023,Aroldis Chapman,2 Tms,35,61,0,6,5,6,58.1,37,36,103,3.085714453872378,1.25142863962602,1.7352975606918335,matched
 chapmar01,Aroldis Chapman,Active Induction,P,2024,Aroldis Chapman,PIT,36,68,0,5,5,14,61.2,44,39,98,3.794594985817058,1.345946084712888,1.0912429094314575,matched
 chapmar01,Aroldis Chapman,Active Induction,P,2025,Aroldis Chapman,BOS,37,67,0,5,3,32,61.1,28,15,85,1.1739131408287662,0.7010870146616243,2.6448545455932617,matched
-chapmar01,Aroldis Chapman,Active Induction,P,2026,Aroldis Chapman,BOS,38,2,0,0,0,1,2,0,0,1,0,0,0.0583186075091362,matched
+chapmar01,Aroldis Chapman,Active Induction,P,2026,Aroldis Chapman,BOS,38,2,0,0,0,1,2,0,0,1,0,0,0.06029575690627098,matched
 ruthba01,Babe Ruth,Official Induction,OF,1914,Babe Ruth,BOS,19,4,3,2,1,0,23,21,7,3,3.9130434782608696,1.2173913043478262,-0.02504209242761135,matched
 ruthba01,Babe Ruth,Official Induction,OF,1915,Babe Ruth,BOS,20,32,28,18,8,0,217.2,166,85,112,2.439509555026444,1.153139168195174,2.5177128314971924,matched
 ruthba01,Babe Ruth,Official Induction,OF,1916,Babe Ruth,BOS,21,44,41,23,12,1,323.2,230,118,170,1.7518021555906094,1.075180158986829,4.538603782653809,matched
@@ -1402,7 +1402,7 @@ salech01,Chris Sale,Active Induction,P,2022,Chris Sale,BOS,33,2,2,0,1,0,5.2,5,1,
 salech01,Chris Sale,Active Induction,P,2023,Chris Sale,BOS,34,20,20,6,5,0,102.2,87,29,125,4.295454651856228,1.129870157857874,2.103240966796875,matched
 salech01,Chris Sale,Active Induction,P,2024,Chris Sale,ATL,35,29,29,18,3,0,177.2,141,39,225,2.380863175718908,1.0131332662633652,6.4253740310668945,matched
 salech01,Chris Sale,Active Induction,P,2025,Chris Sale,ATL,36,21,20,7,5,0,125.2,102,32,165,2.5782493499141124,1.0663130027422565,3.6004711240530014,matched
-salech01,Chris Sale,Active Induction,P,2026,Chris Sale,ATL,37,1,1,1,0,0,6,3,3,6,0,1,0.10342775285243988,matched
+salech01,Chris Sale,Active Induction,P,2026,Chris Sale,ATL,37,1,1,1,0,0,6,3,3,6,0,1,0.1085704192519188,matched
 mathech01,Christy Mathewson,Official Induction,P,1900,Christy Mathewson,NYG,19,6,1,0,3,0,33.2,37,20,15,5.079203124845972,1.6930677082819907,-0.12919241189956665,matched
 mathech01,Christy Mathewson,Official Induction,P,1901,Christy Mathewson,NYG,20,40,38,20,17,0,336,288,97,221,2.4107142857142856,1.1458333333333333,5.430999279022217,matched
 mathech01,Christy Mathewson,Official Induction,P,1902,Christy Mathewson,NYG,21,34,32,14,17,0,276.2,241,73,159,2.1144576758358378,1.1349396755768428,3.787468671798706,matched
@@ -4669,7 +4669,7 @@ janseke01,Kenley Jansen,Active Induction,P,2022,Kenley Jansen,ATL,34,65,0,5,2,41
 janseke01,Kenley Jansen,Active Induction,P,2023,Kenley Jansen,BOS,35,51,0,3,6,29,44.2,40,17,52,3.626865878140229,1.2761194756419325,1.0827622413635254,matched
 janseke01,Kenley Jansen,Active Induction,P,2024,Kenley Jansen,BOS,36,54,0,4,2,27,54.2,38,20,62,3.2926830800071847,1.060975659113426,1.4145267009735107,matched
 janseke01,Kenley Jansen,Active Induction,P,2025,Kenley Jansen,LAA,37,62,0,5,4,29,59,37,19,57,2.59322050665002,0.9491526037411838,0.6144520044326782,matched
-janseke01,Kenley Jansen,Active Induction,P,2026,Kenley Jansen,DET,38,1,0,0,0,1,1,0,0,3,0,0,0.0777129977941513,matched
+janseke01,Kenley Jansen,Active Induction,P,2026,Kenley Jansen,DET,38,1,0,0,0,1,1,0,0,3,0,0,0.07610812783241272,matched
 loftoke01,Kenny Lofton,Corrective Induction,OF,1991,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 loftoke01,Kenny Lofton,Corrective Induction,OF,1992,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 loftoke01,Kenny Lofton,Corrective Induction,OF,1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
