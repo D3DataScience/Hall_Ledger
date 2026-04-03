@@ -1,5 +1,5 @@
 playerID,name,source_group,debut_year,final_year,expected_seasons,batting_seasons_matched,pitching_seasons_matched,coverage_summary
-judgeaa01,Aaron Judge,Active Induction,2016,2026,11,11,0,batting_only
+judgeaa01,Aaron Judge,Active Induction,2016,2026,11,10,0,batting_only
 jossad01,Addie Joss,Official Induction,1902,1910,9,9,9,batting_and_pitching
 beltrad01,Adrian Beltre,Official Induction,1998,2018,21,21,0,batting_only
 kalinal01,Al Kaline,Official Induction,1953,1974,22,22,0,batting_only
@@ -10,11 +10,11 @@ pujolal01,Albert Pujols,Statistical Induction,2001,2022,22,22,1,batting_and_pitc
 rodrial01,Alex Rodriguez,Statistical Induction,1994,2016,23,22,0,batting_only
 rusieam01,Amos Rusie,Official Induction,1889,1901,13,10,10,batting_and_pitching
 dawsoan01,Andre Dawson,Official Induction,1976,1996,21,21,0,batting_only
-mccutan01,Andrew McCutchen,Active Induction,2009,2026,18,18,0,batting_only
+mccutan01,Andrew McCutchen,Active Induction,2009,2026,18,17,0,batting_only
 jonesan01,Andruw Jones,Official Induction,1996,2012,17,17,0,batting_only
 coopean99,Andy Cooper,Official Induction,1871,1939,69,14,14,batting_and_pitching
 vaughar01,Arky Vaughan,Official Induction,1932,1948,17,14,0,batting_only
-chapmar01,Aroldis Chapman,Active Induction,2010,2026,17,2,17,batting_and_pitching
+chapmar01,Aroldis Chapman,Active Induction,2010,2026,17,2,16,batting_and_pitching
 ruthba01,Babe Ruth,Official Induction,1914,1935,22,22,10,batting_and_pitching
 bondsba01,Barry Bonds,Statistical Induction,1986,2007,22,22,0,batting_only
 larkiba01,Barry Larkin,Official Induction,1986,2004,19,19,0,batting_only
@@ -42,7 +42,7 @@ wallabo01,Bobby Wallace,Official Induction,1894,1918,25,25,4,batting_and_pitchin
 saberbr01,Bret Saberhagen,Corrective Induction,1984,2001,18,7,16,batting_and_pitching
 robinbr01,Brooks Robinson,Official Induction,1955,1977,23,23,0,batting_only
 suttebr01,Bruce Sutter,Official Induction,1976,1988,13,12,12,batting_and_pitching
-harpebr03,Bryce Harper,Active Induction,2012,2026,15,15,0,batting_only
+harpebr03,Bryce Harper,Active Induction,2012,2026,15,14,0,batting_only
 ewingbu01,Buck Ewing,Official Induction,1880,1897,18,18,6,batting_and_pitching
 leonabu99,Buck Leonard,Official Induction,1871,1948,78,14,0,batting_only
 roganbu99,Bullet Rogan,Official Induction,1871,1938,68,13,12,batting_and_pitching
@@ -63,14 +63,14 @@ utleych01,Chase Utley,Corrective Induction,2003,2018,16,16,0,batting_only
 lemonch01,Chet Lemon,Corrective Induction,1975,1990,16,16,0,batting_only
 hafeych01,Chick Hafey,Official Induction,1924,1937,14,13,0,batting_only
 jonesch06,Chipper Jones,Official Induction,1993,2012,20,19,0,batting_only
-salech01,Chris Sale,Active Induction,2010,2026,17,7,16,batting_and_pitching
+salech01,Chris Sale,Active Induction,2010,2026,17,7,15,batting_and_pitching
 mathech01,Christy Mathewson,Official Induction,1900,1916,17,17,17,batting_and_pitching
 kleinch01,Chuck Klein,Official Induction,1928,1944,17,17,0,batting_only
 griffcl01,Clark Griffith,Official Induction,1891,1914,24,20,19,batting_and_pitching
 kershcl01,Clayton Kershaw,Statistical Induction,2008,2026,19,13,18,batting_and_pitching
 hamelco01,Cole Hamels,Corrective Induction,2006,2020,15,14,15,batting_and_pitching
 bellco99,Cool Papa Bell,Official Induction,1871,1948,78,21,4,batting_and_pitching
-seageco01,Corey Seager,Active Induction,2015,2026,12,12,0,batting_only
+seageco01,Corey Seager,Active Induction,2015,2026,12,11,0,batting_only
 biggicr01,Craig Biggio,Official Induction,1988,2007,20,20,0,batting_only
 kimbrcr01,Craig Kimbrel,Active Induction,2010,2026,17,2,16,batting_and_pitching
 torricr99,Cristóbal Torriente,Official Induction,1913,2026,114,10,7,batting_and_pitching
@@ -115,7 +115,7 @@ bankser01,Ernie Banks,Official Induction,1953,1971,19,19,0,batting_only
 lombaer01,Ernie Lombardi,Official Induction,1931,1947,17,17,0,batting_only
 hernafe02,Felix Hernandez,Corrective Induction,2005,2019,15,13,15,batting_and_pitching
 jenkife01,Fergie Jenkins,Official Induction,1965,1983,19,12,19,batting_and_pitching
-lindofr01,Francisco Lindor,Active Induction,2015,2026,12,12,0,batting_only
+lindofr01,Francisco Lindor,Active Induction,2015,2026,12,11,0,batting_only
 rodrifr03,Francisco Rodriguez,Corrective Induction,2002,2017,16,1,18,batting_and_pitching
 chancfr01,Frank Chance,Official Induction,1898,1914,17,16,0,batting_only
 robinfr02,Frank Robinson,Official Induction,1956,1976,21,21,0,batting_only
@@ -123,7 +123,7 @@ thomafr04,Frank Thomas,Official Induction,1990,2008,19,19,0,batting_only
 friscfr01,Frankie Frisch,Official Induction,1919,1937,19,19,0,batting_only
 clarkfr01,Fred Clarke,Official Induction,1894,1915,22,21,0,batting_only
 mcgrifr01,Fred McGriff,Official Induction,1986,2004,19,19,0,batting_only
-freemfr01,Freddie Freeman,Active Induction,2010,2026,17,17,0,batting_only
+freemfr01,Freddie Freeman,Active Induction,2010,2026,17,16,0,batting_only
 lindsfr01,Freddie Lindstrom,Official Induction,1924,1936,13,13,0,batting_only
 hartnga01,Gabby Hartnett,Official Induction,1922,1941,20,20,0,batting_only
 cartega01,Gary Carter,Official Induction,1974,1992,19,19,0,batting_only
@@ -135,7 +135,7 @@ kellge01,George Kell,Official Induction,1943,1957,15,15,0,batting_only
 kellyge01,George Kelly,Official Induction,1915,1932,18,16,1,batting_and_pitching
 sislege01,George Sisler,Official Induction,1915,1930,16,15,7,batting_and_pitching
 colege01,Gerrit Cole,Active Induction,2013,2026,14,7,12,batting_and_pitching
-stantmi03,Giancarlo Stanton,Active Induction,2010,2026,17,17,0,batting_only
+stantmi03,Giancarlo Stanton,Active Induction,2010,2026,17,16,0,batting_only
 hodgegi01,Gil Hodges,Official Induction,1943,1963,21,18,0,batting_only
 gosligo01,Goose Goslin,Official Induction,1921,1938,18,18,0,batting_only
 nettlgr01,Graig Nettles,Corrective Induction,1967,1988,22,22,0,batting_only
@@ -161,7 +161,7 @@ rodriiv01,Ivan Rodriguez,Official Induction,1991,2011,21,21,0,batting_only
 chesbja01,Jack Chesbro,Official Induction,1899,1909,11,11,11,batting_and_pitching
 morrija02,Jack Morris,Official Induction,1977,1994,18,1,18,batting_and_pitching
 robinja02,Jackie Robinson,Official Induction,1947,1956,10,10,0,batting_only
-degroja01,Jacob deGrom,Active Induction,2014,2026,13,7,13,batting_and_pitching
+degroja01,Jacob deGrom,Active Induction,2014,2026,13,7,12,batting_and_pitching
 becklja01,Jake Beckley,Official Induction,1888,1907,20,20,1,batting_and_pitching
 moyerja01,Jamie Moyer,Corrective Induction,1986,2012,27,19,25,batting_and_pitching
 bagweje01,Jeff Bagwell,Official Induction,1991,2005,15,15,0,batting_only
@@ -203,18 +203,18 @@ wardjo01,John Ward,Official Induction,1878,1894,17,18,7,batting_and_pitching
 benchjo01,Johnny Bench,Official Induction,1967,1983,17,17,0,batting_only
 eversjo01,Johnny Evers,Official Induction,1902,1929,28,17,0,batting_only
 mizejo01,Johnny Mize,Official Induction,1936,1953,18,15,0,batting_only
-altuvjo01,Jose Altuve,Active Induction,2011,2026,16,16,0,batting_only
-ramirjo01,Jose Ramirez,Active Induction,2013,2026,14,14,5,batting_and_pitching
+altuvjo01,Jose Altuve,Active Induction,2011,2026,16,15,0,batting_only
+ramirjo01,Jose Ramirez,Active Induction,2013,2026,14,13,5,batting_and_pitching
 gibsojo99,Josh Gibson,Official Induction,1871,1946,76,14,1,batting_and_pitching
 mendejo99,José Méndez,Official Induction,1912,1926,15,7,7,batting_and_pitching
 maricju01,Juan Marichal,Official Induction,1960,1975,16,15,16,batting_and_pitching
-sotoju01,Juan Soto,Active Induction,2018,2026,9,9,0,batting_only
+sotoju01,Juan Soto,Active Induction,2018,2026,9,8,0,batting_only
 wilsoju99,Jud Wilson,Official Induction,1871,1945,75,21,0,batting_only
 johnsju99,Judy Johnson,Official Induction,1871,1936,66,11,1,batting_and_pitching
-verlaju01,Justin Verlander,Statistical Induction,2005,2026,22,13,21,batting_and_pitching
+verlaju01,Justin Verlander,Statistical Induction,2005,2026,22,13,20,batting_and_pitching
 hernake01,Keith Hernandez,Corrective Induction,1974,1990,17,17,0,batting_only
 griffke02,Ken Griffey Jr.,Official Induction,1989,2010,22,22,0,batting_only
-janseke01,Kenley Jansen,Active Induction,2010,2026,17,6,17,batting_and_pitching
+janseke01,Kenley Jansen,Active Induction,2010,2026,17,6,16,batting_and_pitching
 loftoke01,Kenny Lofton,Corrective Induction,1991,2007,17,17,0,batting_only
 brownke01,Kevin Brown,Corrective Induction,1986,2005,20,17,22,batting_and_pitching
 nichoki01,Kid Nichols,Official Induction,1890,1906,17,15,15,batting_and_pitching
@@ -236,14 +236,14 @@ santolo99,Louis Santop,Official Induction,1871,2026,156,4,0,batting_only
 aparilu01,Luis Aparicio,Official Induction,1956,1973,18,18,0,batting_only
 tiantlu01,Luis Tiant,Corrective Induction,1964,1982,19,12,19,batting_and_pitching
 applilu01,Luke Appling,Official Induction,1930,1950,21,20,0,batting_only
-machama01,Manny Machado,Active Induction,2012,2026,15,15,0,batting_only
+machama01,Manny Machado,Active Induction,2012,2026,15,14,0,batting_only
 ramirma02,Manny Ramirez,Statistical Induction,1993,2011,19,19,0,batting_only
 riverma01,Mariano Rivera,Official Induction,1995,2013,19,3,19,batting_and_pitching
 buehrma01,Mark Buehrle,Corrective Induction,2000,2015,16,14,16,batting_and_pitching
 mcgwima01,Mark McGwire,Statistical Induction,1986,2001,16,16,0,batting_only
 dihigma99,Martín Dihigo,Official Induction,1871,1945,75,9,9,batting_and_pitching
 careyma01,Max Carey,Official Induction,1910,1929,20,20,0,batting_only
-scherma01,Max Scherzer,Statistical Induction,2008,2026,19,13,19,batting_and_pitching
+scherma01,Max Scherzer,Statistical Induction,2008,2026,19,13,18,batting_and_pitching
 ottme01,Mel Ott,Official Induction,1926,1947,22,22,0,batting_only
 cochrmi01,Mickey Cochrane,Official Induction,1925,1937,13,13,0,batting_only
 mantlmi01,Mickey Mantle,Official Induction,1951,1968,18,18,0,batting_only
@@ -252,21 +252,21 @@ cabremi01,Miguel Cabrera,Statistical Induction,2003,2026,24,21,0,batting_only
 mussimi01,Mike Mussina,Official Induction,1991,2008,18,12,18,batting_and_pitching
 piazzmi01,Mike Piazza,Official Induction,1992,2007,16,16,0,batting_only
 schmimi01,Mike Schmidt,Official Induction,1972,1989,18,18,0,batting_only
-troutmi01,Mike Trout,Active Induction,2011,2026,16,16,0,batting_only
+troutmi01,Mike Trout,Active Induction,2011,2026,16,15,0,batting_only
 minosmi01,Minnie Miñoso,Official Induction,1949,1980,32,17,0,batting_only
 irvinmo01,Monte Irvin,Official Induction,1949,1956,8,8,0,batting_only
-bettsmo01,Mookie Betts,Active Induction,2014,2026,13,13,0,batting_only
+bettsmo01,Mookie Betts,Active Induction,2014,2026,13,12,0,batting_only
 brownmo01,Mordecai Brown,Official Induction,1903,1916,14,14,14,batting_and_pitching
 suttlmu99,Mule Suttles,Official Induction,1871,1948,78,21,5,batting_and_pitching
 lajoina01,Nap Lajoie,Official Induction,1896,1916,21,21,0,batting_only
 foxne01,Nellie Fox,Official Induction,1947,1965,19,19,0,batting_only
-arenano01,Nolan Arenado,Active Induction,2013,2026,14,14,0,batting_only
+arenano01,Nolan Arenado,Active Induction,2013,2026,14,13,0,batting_only
 ryanno01,Nolan Ryan,Official Induction,1966,1993,28,14,27,batting_and_pitching
 radboch01,Old Hoss Radbourn,Official Induction,1880,1891,12,12,11,batting_and_pitching
 cepedor01,Orlando Cepeda,Official Induction,1958,1974,17,17,0,batting_only
 charlos99,Oscar Charleston,Official Induction,1871,1941,71,18,6,batting_and_pitching
 smithoz01,Ozzie Smith,Official Induction,1978,1996,19,19,0,batting_only
-goldspa01,Paul Goldschmidt,Active Induction,2011,2026,16,16,0,batting_only
+goldspa01,Paul Goldschmidt,Active Induction,2011,2026,16,15,0,batting_only
 molitpa01,Paul Molitor,Official Induction,1978,1998,21,21,0,batting_only
 wanerpa01,Paul Waner,Official Induction,1926,1945,20,20,0,batting_only
 martipe02,Pedro Martinez,Official Induction,1992,2009,18,19,23,batting_and_pitching
@@ -319,7 +319,7 @@ sosasa01,Sammy Sosa,Statistical Induction,1989,2007,19,18,0,batting_only
 koufasa01,Sandy Koufax,Official Induction,1955,1966,12,12,12,batting_and_pitching
 paigesa01,Satchel Paige,Official Induction,1948,1965,18,6,6,batting_and_pitching
 rolensc01,Scott Rolen,Official Induction,1996,2012,17,17,0,batting_only
-ohtansh01,Shohei Ohtani,Active Induction,2018,2026,9,9,7,batting_and_pitching
+ohtansh01,Shohei Ohtani,Active Induction,2018,2026,9,8,6,batting_and_pitching
 covelst01,Stan Coveleski,Official Induction,1912,1928,17,14,14,batting_and_pitching
 musiast01,Stan Musial,Official Induction,1941,1963,23,22,0,batting_only
 carltst01,Steve Carlton,Official Induction,1965,1988,24,22,24,batting_and_pitching
