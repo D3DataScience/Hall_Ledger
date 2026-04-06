@@ -327,7 +327,7 @@ chapmar01,Aroldis Chapman,Active Induction,P,2022,Aroldis Chapman,NYY,34,43,0,4,
 chapmar01,Aroldis Chapman,Active Induction,P,2023,Aroldis Chapman,2 Tms,35,61,0,6,5,6,58.1,37,36,103,3.085714453872378,1.25142863962602,1.7352975606918335,matched
 chapmar01,Aroldis Chapman,Active Induction,P,2024,Aroldis Chapman,PIT,36,68,0,5,5,14,61.2,44,39,98,3.794594985817058,1.345946084712888,1.0912429094314575,matched
 chapmar01,Aroldis Chapman,Active Induction,P,2025,Aroldis Chapman,BOS,37,67,0,5,3,32,61.1,28,15,85,1.1739131408287662,0.7010870146616243,2.6448545455932617,matched
-chapmar01,Aroldis Chapman,Active Induction,P,2026,Aroldis Chapman,BOS,38,4,0,0,1,2,4,2,1,3,2.25,0.75,0.09318500757217409,matched
+chapmar01,Aroldis Chapman,Active Induction,P,2026,Aroldis Chapman,BOS,38,4,0,0,1,2,4,2,1,3,2.25,0.75,0.09897901862859726,matched
 ruthba01,Babe Ruth,Official Induction,OF,1914,Babe Ruth,BOS,19,4,3,2,1,0,23,21,7,3,3.9130434782608696,1.2173913043478262,-0.02504209242761135,matched
 ruthba01,Babe Ruth,Official Induction,OF,1915,Babe Ruth,BOS,20,32,28,18,8,0,217.2,166,85,112,2.439509555026444,1.153139168195174,2.5177128314971924,matched
 ruthba01,Babe Ruth,Official Induction,OF,1916,Babe Ruth,BOS,21,44,41,23,12,1,323.2,230,118,170,1.7518021555906094,1.075180158986829,4.538603782653809,matched
@@ -1402,7 +1402,7 @@ salech01,Chris Sale,Active Induction,P,2022,Chris Sale,BOS,33,2,2,0,1,0,5.2,5,1,
 salech01,Chris Sale,Active Induction,P,2023,Chris Sale,BOS,34,20,20,6,5,0,102.2,87,29,125,4.295454651856228,1.129870157857874,2.103240966796875,matched
 salech01,Chris Sale,Active Induction,P,2024,Chris Sale,ATL,35,29,29,18,3,0,177.2,141,39,225,2.380863175718908,1.0131332662633652,6.4253740310668945,matched
 salech01,Chris Sale,Active Induction,P,2025,Chris Sale,ATL,36,21,20,7,5,0,125.2,102,32,165,2.5782493499141124,1.0663130027422565,3.6004711240530014,matched
-salech01,Chris Sale,Active Induction,P,2026,Chris Sale,ATL,37,2,2,2,0,0,12,4,3,9,0.75,0.5833333333333334,0.1283130943775177,matched
+salech01,Chris Sale,Active Induction,P,2026,Chris Sale,ATL,37,2,2,2,0,0,12,4,3,9,0.75,0.5833333333333334,0.13008971512317655,matched
 mathech01,Christy Mathewson,Official Induction,P,1900,Christy Mathewson,NYG,19,6,1,0,3,0,33.2,37,20,15,5.079203124845972,1.6930677082819907,-0.12919241189956665,matched
 mathech01,Christy Mathewson,Official Induction,P,1901,Christy Mathewson,NYG,20,40,38,20,17,0,336,288,97,221,2.4107142857142856,1.1458333333333333,5.430999279022217,matched
 mathech01,Christy Mathewson,Official Induction,P,1902,Christy Mathewson,NYG,21,34,32,14,17,0,276.2,241,73,159,2.1144576758358378,1.1349396755768428,3.787468671798706,matched
@@ -3427,7 +3427,7 @@ degroja01,Jacob deGrom,Active Induction,P,2022,Jacob deGrom,NYM,34,11,11,5,4,0,6
 degroja01,Jacob deGrom,Active Induction,P,2023,Jacob deGrom,TEX,35,6,6,2,0,0,30.1,19,4,45,2.670329782269228,0.7582417900270646,1.450561761856079,matched
 degroja01,Jacob deGrom,Active Induction,P,2024,Jacob deGrom,TEX,36,3,3,0,0,0,10.2,11,1,14,1.687500100582844,1.1250000670552294,0.3932059109210968,matched
 degroja01,Jacob deGrom,Active Induction,P,2025,Jacob deGrom,TEX,37,30,30,12,8,0,172.2,122,37,185,2.971042646079201,0.920849475100571,3.3914434909820557,matched
-degroja01,Jacob deGrom,Active Induction,P,2026,Jacob deGrom,TEX,38,1,1,0,0,0,4.2,6,0,7,5.7857150739554095,1.28571446087898,0.10012606531381608,matched
+degroja01,Jacob deGrom,Active Induction,P,2026,Jacob deGrom,TEX,38,1,1,0,0,0,4.2,6,0,7,5.7857150739554095,1.28571446087898,0.10476922243833542,matched
 becklja01,Jake Beckley,Official Induction,1B,1888,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 becklja01,Jake Beckley,Official Induction,1B,1889,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 becklja01,Jake Beckley,Official Induction,1B,1890,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
@@ -4613,7 +4613,7 @@ verlaju01,Justin Verlander,Statistical Induction,P,2022,Justin Verlander,HOU,39,
 verlaju01,Justin Verlander,Statistical Induction,P,2023,Justin Verlander,2 Tms,40,27,27,13,8,0,162.1,139,45,144,3.215605699110627,1.1334702081156234,3.368416428565979,matched
 verlaju01,Justin Verlander,Statistical Induction,P,2024,Justin Verlander,HOU,41,17,17,5,6,0,90.1,98,27,74,5.479705105585477,1.3837639155518882,0.677863597869873,matched
 verlaju01,Justin Verlander,Statistical Induction,P,2025,Justin Verlander,SFG,42,29,29,4,11,0,152,155,52,137,3.848684210526316,1.361842105263158,2.249141216278076,matched
-verlaju01,Justin Verlander,Statistical Induction,P,2026,Justin Verlander,DET,43,1,1,0,1,0,3.2,6,2,1,12.27272940076124,2.1818185601353317,-0.09144019335508348,matched
+verlaju01,Justin Verlander,Statistical Induction,P,2026,Justin Verlander,DET,43,1,1,0,1,0,3.2,6,2,1,12.27272940076124,2.1818185601353317,-0.08743719756603241,matched
 hernake01,Keith Hernandez,Corrective Induction,1B,1974,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 hernake01,Keith Hernandez,Corrective Induction,1B,1975,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 hernake01,Keith Hernandez,Corrective Induction,1B,1976,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
@@ -4669,7 +4669,7 @@ janseke01,Kenley Jansen,Active Induction,P,2022,Kenley Jansen,ATL,34,65,0,5,2,41
 janseke01,Kenley Jansen,Active Induction,P,2023,Kenley Jansen,BOS,35,51,0,3,6,29,44.2,40,17,52,3.626865878140229,1.2761194756419325,1.0827622413635254,matched
 janseke01,Kenley Jansen,Active Induction,P,2024,Kenley Jansen,BOS,36,54,0,4,2,27,54.2,38,20,62,3.2926830800071847,1.060975659113426,1.4145267009735107,matched
 janseke01,Kenley Jansen,Active Induction,P,2025,Kenley Jansen,LAA,37,62,0,5,4,29,59,37,19,57,2.59322050665002,0.9491526037411838,0.6144520044326782,matched
-janseke01,Kenley Jansen,Active Induction,P,2026,Kenley Jansen,DET,38,3,0,0,0,1,1.2,1,1,5,5.400002059937309,1.2000004577638466,-0.08269795030355453,matched
+janseke01,Kenley Jansen,Active Induction,P,2026,Kenley Jansen,DET,38,3,0,0,0,1,1.2,1,1,5,5.400002059937309,1.2000004577638466,-0.07906382530927658,matched
 loftoke01,Kenny Lofton,Corrective Induction,OF,1991,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 loftoke01,Kenny Lofton,Corrective Induction,OF,1992,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 loftoke01,Kenny Lofton,Corrective Induction,OF,1993,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
@@ -5432,7 +5432,7 @@ scherma01,Max Scherzer,Statistical Induction,P,2022,Max Scherzer,NYM,37,23,23,11
 scherma01,Max Scherzer,Statistical Induction,P,2023,Max Scherzer,2 Tms,38,27,27,13,6,0,152.2,126,45,174,3.7729258270417896,1.1200873549030312,2.1651731729507446,matched
 scherma01,Max Scherzer,Statistical Induction,P,2024,Max Scherzer,TEX,39,9,9,2,4,0,43.1,40,10,40,3.946153961949098,1.1538461877044146,0.6061842441558838,matched
 scherma01,Max Scherzer,Statistical Induction,P,2025,Max Scherzer,TOR,40,17,17,5,5,0,85,87,23,82,5.188235294117647,1.2941176470588236,0.3993212580680847,matched
-scherma01,Max Scherzer,Statistical Induction,P,2026,Max Scherzer,TOR,41,1,1,1,0,0,6,4,1,4,1.5,0.8333333333333334,0.02168302610516548,matched
+scherma01,Max Scherzer,Statistical Induction,P,2026,Max Scherzer,TOR,41,1,1,1,0,0,6,4,1,4,1.5,0.8333333333333334,0.02926182933151722,matched
 ottme01,Mel Ott,Official Induction,OF,1926,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 ottme01,Mel Ott,Official Induction,OF,1927,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 ottme01,Mel Ott,Official Induction,OF,1928,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
@@ -7187,7 +7187,7 @@ ohtansh01,Shohei Ohtani,Active Induction,P,2022,Shohei Ohtani,LAA,27,28,28,15,9,
 ohtansh01,Shohei Ohtani,Active Induction,P,2023,Shohei Ohtani,LAA,28,23,23,10,5,0,132,85,55,167,3.136363636363636,1.0606060606060606,2.2932345867156982,matched
 ohtansh01,Shohei Ohtani,Active Induction,P,2024,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 ohtansh01,Shohei Ohtani,Active Induction,P,2025,Shohei Ohtani,LAD,30,14,14,1,1,0,47,40,9,62,2.872340425531915,1.0425531914893618,1.9280993938446045,matched
-ohtansh01,Shohei Ohtani,Active Induction,P,2026,Shohei Ohtani,LAD,31,1,1,1,0,0,6,1,3,6,0,0.6666666666666666,0.143535315990448,matched
+ohtansh01,Shohei Ohtani,Active Induction,P,2026,Shohei Ohtani,LAD,31,1,1,1,0,0,6,1,3,6,0,0.6666666666666666,0.14322830736637115,matched
 covelst01,Stan Coveleski,Official Induction,P,1912,Stan Coveleski,PHA,22,5,2,2,1,0,21,18,4,9,3.4285714285714284,1.0476190476190477,0.271541029214859,matched
 covelst01,Stan Coveleski,Official Induction,P,1913,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 covelst01,Stan Coveleski,Official Induction,P,1914,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing

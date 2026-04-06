@@ -1,5 +1,5 @@
 playerID,name,source_group,primary_position,batting_seasons_matched,batting_games,hits,home_runs,runs_batted_in,stolen_bases,career_batting_fwar,career_batting_average,pitching_seasons_matched,pitching_games,wins,losses,saves,strikeouts,career_pitching_fwar,career_total_fwar
-judgeaa01,Aaron Judge,Active Induction,OF,11,1153,1212,371,837,66,61.8,0.293,0,0,0,0,0,0,0,61.8
+judgeaa01,Aaron Judge,Active Induction,OF,11,1154,1214,371,837,66,61.8,0.293,0,0,0,0,0,0,0,61.8
 jossad01,Addie Joss,Official Induction,P,9,296,118,1,51,10,-2.8,0.144,9,286,160,97,5,920,33.9,31.1
 beltrad01,Adrian Beltre,Official Induction,3B,21,2933,3166,477,1707,121,83.5,0.286,0,0,0,0,0,0,0,83.5
 kalinal01,Al Kaline,Official Induction,OF,22,2834,3007,399,1583,137,88.9,0.297,0,0,0,0,0,0,0,88.9
@@ -10,7 +10,7 @@ pujolal01,Albert Pujols,Statistical Induction,1B,22,3080,3384,703,2218,117,89.9,
 rodrial01,Alex Rodriguez,Statistical Induction,SS,22,2784,3115,696,2086,329,113.6,0.295,0,0,0,0,0,0,0,113.6
 rusieam01,Amos Rusie,Official Induction,P,10,487,428,8,176,25,-1.3,0.247,10,462,245,174,5,1934,46.5,45.2
 dawsoan01,Andre Dawson,Official Induction,OF,21,2627,2774,438,1591,314,59.5,0.279,0,0,0,0,0,0,0,59.5
-mccutan01,Andrew McCutchen,Active Induction,OF,18,2268,2272,333,1156,220,52.6,0.272,0,0,0,0,0,0,0,52.6
+mccutan01,Andrew McCutchen,Active Induction,OF,18,2269,2272,333,1156,220,52.5,0.272,0,0,0,0,0,0,0,52.5
 jonesan01,Andruw Jones,Official Induction,OF,17,2196,1933,434,1289,152,67,0.254,0,0,0,0,0,0,0,67
 coopean99,Andy Cooper,Official Induction,P,14,298,105,3,35,0,-2.3,0.181,14,288,118,64,24,719,25.5,23.2
 vaughar01,Arky Vaughan,Official Induction,SS,14,1817,2103,96,926,118,72.4,0.318,0,0,0,0,0,0,0,72.4
@@ -42,7 +42,7 @@ wallabo01,Bobby Wallace,Official Induction,SS,25,2383,2309,34,1121,201,62.4,0.26
 saberbr01,Bret Saberhagen,Corrective Induction,P,7,144,23,0,1,0,-0.2,0.121,16,399,167,117,1,1715,55.3,55.1
 robinbr01,Brooks Robinson,Official Induction,3B,23,2896,2848,268,1357,28,80.2,0.267,0,0,0,0,0,0,0,80.2
 suttebr01,Bruce Sutter,Official Induction,P,12,661,9,0,6,1,-0.5,0.088,12,661,68,71,300,861,19.2,18.7
-harpebr03,Bryce Harper,Active Induction,OF,15,1793,1806,365,1055,152,55.4,0.279,0,0,0,0,0,0,0,55.4
+harpebr03,Bryce Harper,Active Induction,OF,15,1794,1806,365,1055,152,55.3,0.279,0,0,0,0,0,0,0,55.3
 ewingbu01,Buck Ewing,Official Induction,C,18,1315,1625,71,883,354,48.1,0.303,6,9,2,3,0,23,0.2,48.3
 leonabu99,Buck Leonard,Official Induction,1B,14,589,728,95,545,34,34.2,0.345,0,0,0,0,0,0,0,34.2
 roganbu99,Bullet Rogan,Official Induction,OF,13,681,693,50,419,106,23.1,0.338,12,214,120,52,16,918,36.5,59.6
@@ -70,7 +70,7 @@ griffcl01,Clark Griffith,Official Induction,P,20,484,321,8,166,22,2.2,0.233,19,4
 kershcl01,Clayton Kershaw,Statistical Induction,P,13,378,113,1,40,1,1.6,0.162,18,455,223,96,0,3052,79.1,80.7
 hamelco01,Cole Hamels,Corrective Induction,P,14,429,116,2,34,1,1.3,0.169,15,423,163,122,0,2560,51.6,52.9
 bellco99,Cool Papa Bell,Official Induction,OF,21,1199,1546,57,595,285,34,0.325,4,49,20,15,0,146,3.4,37.4
-seageco01,Corey Seager,Active Induction,SS,12,1139,1262,224,672,21,41.7,0.289,0,0,0,0,0,0,0,41.7
+seageco01,Corey Seager,Active Induction,SS,12,1140,1262,224,672,21,41.6,0.288,0,0,0,0,0,0,0,41.6
 biggicr01,Craig Biggio,Official Induction,2B,20,2850,3060,291,1175,414,65.8,0.281,0,0,0,0,0,0,0,65.8
 kimbrcr01,Craig Kimbrel,Active Induction,P,2,124,0,0,0,0,-0,0,16,851,56,48,440,1282,21.5,21.5
 torricr99,Cristóbal Torriente,Official Induction,OF,10,646,759,55,530,93,27.8,0.34,7,32,13,7,1,60,2.2,30
@@ -115,7 +115,7 @@ bankser01,Ernie Banks,Official Induction,1B,19,2528,2583,512,1636,50,63.3,0.274,
 lombaer01,Ernie Lombardi,Official Induction,C,17,1853,1792,190,990,8,41.8,0.306,0,0,0,0,0,0,0,41.8
 hernafe02,Felix Hernandez,Corrective Induction,P,13,391,4,1,7,0,-0,0.08,15,419,169,136,0,2524,54,54
 jenkife01,Fergie Jenkins,Official Induction,P,12,450,148,13,85,0,1.7,0.165,19,664,284,226,7,3192,80.1,81.8
-lindofr01,Francisco Lindor,Active Induction,SS,12,1544,1669,279,856,217,60.7,0.273,0,0,0,0,0,0,0,60.7
+lindofr01,Francisco Lindor,Active Induction,SS,12,1545,1669,279,856,217,60.6,0.273,0,0,0,0,0,0,0,60.6
 rodrifr03,Francisco Rodriguez,Corrective Induction,P,1,73,1,0,0,0,0,0.5,18,1001,53,56,437,1185,15.9,15.9
 chancfr01,Frank Chance,Official Induction,1B,16,1286,1273,20,596,401,48.1,0.296,0,0,0,0,0,0,0,48.1
 robinfr02,Frank Robinson,Official Induction,OF,21,2808,2943,586,1812,204,104,0.294,0,0,0,0,0,0,0,104
@@ -123,7 +123,7 @@ thomafr04,Frank Thomas,Official Induction,1B,19,2322,2468,521,1704,32,72.1,0.301
 friscfr01,Frankie Frisch,Official Induction,2B,19,2311,2880,105,1244,419,74.8,0.316,0,0,0,0,0,0,0,74.8
 clarkfr01,Fred Clarke,Official Induction,OF,21,2242,2672,67,1015,506,72.8,0.312,0,0,0,0,0,0,0,72.8
 mcgrifr01,Fred McGriff,Official Induction,1B,19,2460,2490,493,1550,72,56.9,0.284,0,0,0,0,0,0,0,56.9
-freemfr01,Freddie Freeman,Active Induction,1B,17,2187,2439,369,1331,104,65,0.299,0,0,0,0,0,0,0,65
+freemfr01,Freddie Freeman,Active Induction,1B,17,2188,2440,369,1331,104,65,0.299,0,0,0,0,0,0,0,65
 lindsfr01,Freddie Lindstrom,Official Induction,3B,13,1438,1747,103,779,84,30.8,0.311,0,0,0,0,0,0,0,30.8
 hartnga01,Gabby Hartnett,Official Induction,C,20,1990,1912,236,1179,28,53.7,0.297,0,0,0,0,0,0,0,53.7
 cartega01,Gary Carter,Official Induction,C,19,2295,2092,324,1225,39,69.4,0.262,0,0,0,0,0,0,0,69.4
@@ -135,7 +135,7 @@ kellge01,George Kell,Official Induction,3B,15,1795,2054,78,870,51,38.2,0.306,0,0
 kellyge01,George Kelly,Official Induction,1B,16,1622,1778,148,1020,65,29.2,0.297,1,1,1,0,0,2,0,29.2
 sislege01,George Sisler,Official Induction,1B,15,2055,2812,102,1175,375,52.1,0.34,7,24,5,6,3,63,1.1,53.2
 colege01,Gerrit Cole,Active Induction,P,7,195,41,3,15,0,0.7,0.163,12,317,153,80,0,2251,45.9,46.6
-stantmi03,Giancarlo Stanton,Active Induction,OF,17,1733,1630,454,1175,43,45,0.259,0,0,0,0,0,0,0,45
+stantmi03,Giancarlo Stanton,Active Induction,OF,17,1734,1632,454,1175,43,45,0.259,0,0,0,0,0,0,0,45
 hodgegi01,Gil Hodges,Official Induction,1B,18,2071,1921,370,1274,63,42.1,0.273,0,0,0,0,0,0,0,42.1
 gosligo01,Goose Goslin,Official Induction,OF,18,2287,2735,248,1609,175,64.1,0.316,0,0,0,0,0,0,0,64.1
 nettlgr01,Graig Nettles,Corrective Induction,3B,22,2700,2225,390,1314,32,65.7,0.248,0,0,0,0,0,0,0,65.7
@@ -203,8 +203,8 @@ wardjo01,John Ward,Official Induction,SS,18,1826,2105,26,867,540,39.8,0.275,7,29
 benchjo01,Johnny Bench,Official Induction,C,17,2158,2048,389,1376,68,74.8,0.267,0,0,0,0,0,0,0,74.8
 eversjo01,Johnny Evers,Official Induction,2B,17,1783,1659,12,538,324,49,0.27,0,0,0,0,0,0,0,49
 mizejo01,Johnny Mize,Official Induction,1B,15,1884,2011,359,1337,28,68.1,0.312,0,0,0,0,0,0,0,68.1
-altuvjo01,Jose Altuve,Active Induction,2B,16,1985,2397,257,893,326,60.6,0.303,0,0,0,0,0,0,0,60.6
-ramirjo01,Jose Ramirez,Active Induction,3B,14,1617,1674,286,954,289,57.8,0.279,5,124,5,9,0,111,-0.7,57.1
+altuvjo01,Jose Altuve,Active Induction,2B,16,1986,2399,257,894,326,60.8,0.303,0,0,0,0,0,0,0,60.8
+ramirjo01,Jose Ramirez,Active Induction,3B,14,1619,1674,286,954,289,57.6,0.279,5,124,5,9,0,111,-0.7,56.9
 gibsojo99,Josh Gibson,Official Induction,C,14,598,806,165,730,40,44.5,0.374,1,1,0,0,0,0,-0,44.5
 mendejo99,José Méndez,Official Induction,P,7,233,144,3,62,33,2,0.232,7,69,30,9,8,139,5,7
 maricju01,Juan Marichal,Official Induction,P,15,464,202,4,75,2,0.5,0.165,16,471,243,142,2,2303,61.2,61.7
@@ -214,7 +214,7 @@ johnsju99,Judy Johnson,Official Induction,3B,11,709,809,25,457,75,17.1,0.304,1,1
 verlaju01,Justin Verlander,Statistical Induction,P,13,431,5,0,1,0,-0.4,0.1,21,556,266,159,0,3554,84.2,83.8
 hernake01,Keith Hernandez,Corrective Induction,1B,17,2088,2182,162,1071,98,59.4,0.296,0,0,0,0,0,0,0,59.4
 griffke02,Ken Griffey Jr.,Official Induction,OF,22,2671,2781,630,1836,184,77.7,0.284,0,0,0,0,0,0,0,77.7
-janseke01,Kenley Jansen,Active Induction,P,6,365,3,0,1,0,0.2,0.333,17,936,54,40,477,1283,25.3,25.5
+janseke01,Kenley Jansen,Active Induction,P,6,365,3,0,1,0,0.2,0.333,17,936,54,40,477,1283,25.4,25.6
 loftoke01,Kenny Lofton,Corrective Induction,OF,17,2103,2428,130,781,622,62.4,0.299,0,0,0,0,0,0,0,62.4
 brownke01,Kevin Brown,Corrective Induction,P,17,365,112,9,60,0,0.2,0.164,22,510,214,149,0,2441,76.8,77
 nichoki01,Kid Nichols,Official Induction,P,15,649,471,16,278,19,-1.6,0.226,15,620,361,208,17,1868,80,78.4
@@ -236,14 +236,14 @@ santolo99,Louis Santop,Official Induction,C,4,115,111,7,65,9,2.4,0.317,0,0,0,0,0
 aparilu01,Luis Aparicio,Official Induction,SS,18,2601,2677,83,791,506,49.1,0.262,0,0,0,0,0,0,0,49.1
 tiantlu01,Luis Tiant,Corrective Induction,P,12,375,84,5,44,1,0.3,0.164,19,573,229,172,15,2416,54.8,55.1
 applilu01,Luke Appling,Official Induction,SS,20,2422,2749,45,1116,179,72.6,0.31,0,0,0,0,0,0,0,72.6
-machama01,Manny Machado,Active Induction,3B,15,1902,2074,369,1144,113,57.5,0.279,0,0,0,0,0,0,0,57.5
+machama01,Manny Machado,Active Induction,3B,15,1903,2075,370,1147,113,57.6,0.278,0,0,0,0,0,0,0,57.6
 ramirma02,Manny Ramirez,Statistical Induction,OF,19,2302,2574,555,1831,38,66.4,0.312,0,0,0,0,0,0,0,66.4
 riverma01,Mariano Rivera,Official Induction,P,3,190,0,0,1,0,0,0,19,1115,82,60,652,1173,39.1,39.1
 buehrma01,Mark Buehrle,Corrective Induction,P,14,458,9,1,3,0,-0.8,0.072,16,518,214,160,0,1870,52.3,51.5
 mcgwima01,Mark McGwire,Statistical Induction,1B,16,1874,1626,583,1414,12,66.3,0.263,0,0,0,0,0,0,0,66.3
 dihigma99,Martín Dihigo,Official Induction,OF,9,397,436,68,309,47,15.4,0.307,9,60,27,19,2,246,8.9,24.3
 careyma01,Max Carey,Official Induction,OF,20,2476,2665,70,800,738,60.1,0.285,0,0,0,0,0,0,0,60.1
-scherma01,Max Scherzer,Statistical Induction,P,13,402,78,1,30,3,1,0.168,19,484,222,117,0,3493,73.5,74.5
+scherma01,Max Scherzer,Statistical Induction,P,13,402,78,1,30,3,1,0.168,19,484,222,117,0,3493,73.6,74.6
 ottme01,Mel Ott,Official Induction,OF,22,2730,2876,511,1860,89,110.1,0.304,0,0,0,0,0,0,0,110.1
 cochrmi01,Mickey Cochrane,Official Induction,C,13,1482,1652,119,832,64,50.6,0.32,0,0,0,0,0,0,0,50.6
 mantlmi01,Mickey Mantle,Official Induction,OF,18,2401,2415,536,1509,153,112.3,0.298,0,0,0,0,0,0,0,112.3
@@ -252,15 +252,15 @@ cabremi01,Miguel Cabrera,Statistical Induction,1B,21,2797,3174,511,1881,40,68.7,
 mussimi01,Mike Mussina,Official Induction,P,12,376,9,0,5,0,0.1,0.173,18,537,270,153,0,2813,81.2,81.3
 piazzmi01,Mike Piazza,Official Induction,C,16,1912,2127,427,1335,17,62.5,0.308,0,0,0,0,0,0,0,62.5
 schmimi01,Mike Schmidt,Official Induction,3B,18,2404,2234,548,1595,174,106.5,0.267,0,0,0,0,0,0,0,106.5
-troutmi01,Mike Trout,Active Induction,OF,16,1657,1760,406,1021,216,87.4,0.294,0,0,0,0,0,0,0,87.4
+troutmi01,Mike Trout,Active Induction,OF,16,1658,1761,406,1021,216,87.5,0.294,0,0,0,0,0,0,0,87.5
 minosmi01,Minnie Miñoso,Official Induction,OF,17,1835,1963,186,1023,205,50.8,0.298,0,0,0,0,0,0,0,50.8
 irvinmo01,Monte Irvin,Official Induction,OF,8,764,731,99,443,28,20.8,0.293,0,0,0,0,0,0,0,20.8
-bettsmo01,Mookie Betts,Active Induction,OF,13,1539,1772,293,920,196,62.7,0.29,0,0,0,0,0,0,0,62.7
+bettsmo01,Mookie Betts,Active Induction,OF,13,1539,1772,293,920,196,62.8,0.29,0,0,0,0,0,0,0,62.8
 brownmo01,Mordecai Brown,Official Induction,P,14,493,235,2,74,8,0.5,0.206,14,481,239,130,49,1375,49.3,49.8
 suttlmu99,Mule Suttles,Official Induction,1B,21,906,1089,179,877,84,40,0.34,5,5,0,0,0,6,-0.3,39.7
 lajoina01,Nap Lajoie,Official Induction,2B,21,2480,3242,83,1599,380,102.2,0.338,0,0,0,0,0,0,0,102.2
 foxne01,Nellie Fox,Official Induction,2B,19,2367,2663,35,790,76,45.2,0.288,0,0,0,0,0,0,0,45.2
-arenano01,Nolan Arenado,Active Induction,3B,14,1795,1926,353,1184,31,51.4,0.282,0,0,0,0,0,0,0,51.4
+arenano01,Nolan Arenado,Active Induction,3B,14,1796,1927,353,1185,31,51.5,0.282,0,0,0,0,0,0,0,51.5
 ryanno01,Nolan Ryan,Official Induction,P,14,424,94,2,36,3,-2.2,0.11,27,807,324,292,3,5714,106.7,104.5
 radboch01,Old Hoss Radbourn,Official Induction,P,12,653,585,9,259,26,1.8,0.235,11,528,309,195,2,1830,49.3,51.1
 cepedor01,Orlando Cepeda,Official Induction,1B,17,2124,2351,379,1365,142,50.3,0.297,0,0,0,0,0,0,0,50.3
@@ -319,7 +319,7 @@ sosasa01,Sammy Sosa,Statistical Induction,OF,18,2354,2408,609,1667,234,60.1,0.27
 koufasa01,Sandy Koufax,Official Induction,P,12,397,75,2,28,0,-3.7,0.097,12,397,165,87,9,2396,54.5,50.8
 paigesa01,Satchel Paige,Official Induction,P,6,179,12,0,4,0,-1.2,0.097,6,179,28,31,32,288,7.2,6
 rolensc01,Scott Rolen,Official Induction,3B,17,2038,2077,316,1287,118,69.9,0.281,0,0,0,0,0,0,0,69.9
-ohtansh01,Shohei Ohtani,Active Induction,P,9,1041,1057,281,673,165,36.1,0.281,7,101,40,20,0,676,13.8,49.9
+ohtansh01,Shohei Ohtani,Active Induction,P,9,1042,1059,282,675,165,36.3,0.281,7,101,40,20,0,676,13.8,50.1
 covelst01,Stan Coveleski,Official Induction,P,14,451,168,1,81,0,-4.6,0.159,14,450,215,142,21,981,50.5,45.9
 musiast01,Stan Musial,Official Induction,OF,22,3026,3630,475,1951,78,126.4,0.331,0,0,0,0,0,0,0,126.4
 carltst01,Steve Carlton,Official Induction,P,22,699,346,13,140,2,6.3,0.201,24,741,329,244,2,4136,96.5,102.8
