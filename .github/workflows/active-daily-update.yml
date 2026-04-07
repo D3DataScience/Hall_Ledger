@@ -2,8 +2,7 @@ name: Active Daily Update
 
 on:
   schedule:
-    - cron: "15 10 * * *"
-    - cron: "30 13 * * *"
+    - cron: "30 3 * * 1"
   workflow_dispatch:
 
 permissions:

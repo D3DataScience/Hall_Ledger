@@ -284,7 +284,7 @@ coopean99,Andy Cooper,Official Induction,P,1926,Andy Cooper,DS,29,37,23,13,9,3,1
 coopean99,Andy Cooper,Official Induction,P,1927,Andy Cooper,DS,30,12,9,4,4,2,77.2,101,10,32,4.403431457780162,1.429183894191807,0.386146605014801,matched
 coopean99,Andy Cooper,Official Induction,P,1928,Andy Cooper,KCM,31,22,17,12,7,0,130.1,128,18,53,3.383632637879685,1.1202049095928208,2.3864786624908447,matched
 coopean99,Andy Cooper,Official Induction,P,1929,Andy Cooper,KCM,32,25,21,15,4,0,151,145,64,104,3.5165562913907285,1.3841059602649006,2.7239789962768555,matched
-coopean99,Andy Cooper,Official Induction,P,1930,Andy Cooper,DS,33,19,13,9,6,2,124.2,119,19,52,3.1042771883086213,1.1069515555209035,2.7992630004882812,matched
+coopean99,Andy Cooper,Official Induction,P,1930,Andy Cooper,DS,33,19,13,9,6,2,124.2,119,19,52,3.1042771883086213,1.1069515555209035,2.7992630004882813,matched
 coopean99,Andy Cooper,Official Induction,P,1931,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 coopean99,Andy Cooper,Official Induction,P,1932,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 coopean99,Andy Cooper,Official Induction,P,1933,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
@@ -1402,7 +1402,7 @@ salech01,Chris Sale,Active Induction,P,2022,Chris Sale,BOS,33,2,2,0,1,0,5.2,5,1,
 salech01,Chris Sale,Active Induction,P,2023,Chris Sale,BOS,34,20,20,6,5,0,102.2,87,29,125,4.295454651856228,1.129870157857874,2.103240966796875,matched
 salech01,Chris Sale,Active Induction,P,2024,Chris Sale,ATL,35,29,29,18,3,0,177.2,141,39,225,2.380863175718908,1.0131332662633652,6.4253740310668945,matched
 salech01,Chris Sale,Active Induction,P,2025,Chris Sale,ATL,36,21,20,7,5,0,125.2,102,32,165,2.5782493499141124,1.0663130027422565,3.6004711240530014,matched
-salech01,Chris Sale,Active Induction,P,2026,Chris Sale,ATL,37,1,1,1,0,0,6,3,3,6,0,1,0.10342775285243988,matched
+salech01,Chris Sale,Active Induction,P,2026,Chris Sale,ATL,37,1,1,1,0,0,6,3,3,6,0,1,0.10342775285244,matched
 mathech01,Christy Mathewson,Official Induction,P,1900,Christy Mathewson,NYG,19,6,1,0,3,0,33.2,37,20,15,5.079203124845972,1.6930677082819907,-0.12919241189956665,matched
 mathech01,Christy Mathewson,Official Induction,P,1901,Christy Mathewson,NYG,20,40,38,20,17,0,336,288,97,221,2.4107142857142856,1.1458333333333333,5.430999279022217,matched
 mathech01,Christy Mathewson,Official Induction,P,1902,Christy Mathewson,NYG,21,34,32,14,17,0,276.2,241,73,159,2.1144576758358378,1.1349396755768428,3.787468671798706,matched
@@ -1417,7 +1417,7 @@ mathech01,Christy Mathewson,Official Induction,P,1910,Christy Mathewson,NYG,29,3
 mathech01,Christy Mathewson,Official Induction,P,1911,Christy Mathewson,NYG,30,45,37,26,13,3,307,303,38,141,1.993485342019544,1.1107491856677525,6.7736005783081055,matched
 mathech01,Christy Mathewson,Official Induction,P,1912,Christy Mathewson,NYG,31,43,34,23,12,4,310,311,34,134,2.1193548387096772,1.1129032258064515,6.194167613983154,matched
 mathech01,Christy Mathewson,Official Induction,P,1913,Christy Mathewson,NYG,32,40,35,25,11,2,306,291,21,93,2.0588235294117645,1.0196078431372548,5.3286237716674805,matched
-mathech01,Christy Mathewson,Official Induction,P,1914,Christy Mathewson,NYG,33,41,35,24,13,2,312,314,23,80,3,1.080128205128205,3.2582778930664062,matched
+mathech01,Christy Mathewson,Official Induction,P,1914,Christy Mathewson,NYG,33,41,35,24,13,2,312,314,23,80,3,1.080128205128205,3.2582778930664063,matched
 mathech01,Christy Mathewson,Official Induction,P,1915,Christy Mathewson,NYG,34,27,24,8,14,0,186,199,20,57,3.5806451612903225,1.1774193548387095,1.669941782951355,matched
 mathech01,Christy Mathewson,Official Induction,P,1916,Christy Mathewson,2 Tms,35,13,7,4,4,2,74.2,74,8,19,3.013391420245856,1.0982137620451564,0.34770730324089527,matched
 kleinch01,Chuck Klein,Official Induction,OF,1928,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
@@ -2519,10 +2519,8 @@ rodrifr03,Francisco Rodriguez,Corrective Induction,P,2006,Francisco Rodríguez,L
 rodrifr03,Francisco Rodriguez,Corrective Induction,P,2007,Francisco Rodríguez,LAA,25,64,0,5,2,40,67.1,50,34,90,2.8069312231481613,1.2475249880658494,1.8997122049331665,matched
 rodrifr03,Francisco Rodriguez,Corrective Induction,P,2008,Francisco Rodríguez,LAA,26,76,0,2,3,62,68.1,54,34,77,2.23902455690148,1.2878049739041193,1.4974998235702517,matched
 rodrifr03,Francisco Rodriguez,Corrective Induction,P,2009,Francisco Rodríguez,NYM,27,70,0,3,6,35,68,51,38,73,3.7058827687300258,1.3088236762578265,0.6881434321403503,matched
-rodrifr03,Francisco Rodriguez,Corrective Induction,P,2010,Francisco Rodríguez,NYM,28,53,0,4,2,25,57.1,45,21,67,2.197674467345714,1.1511628162287073,1.4813460111618042,matched
-rodrifr03,Francisco Rodriguez,Corrective Induction,P,2010,Francisco Rodriguez,LAA,27,43,0,1,3,0,47.1,46,26,36,4.373239906551727,1.521126924017992,-0.19817857444286344,matched
-rodrifr03,Francisco Rodriguez,Corrective Induction,P,2011,Francisco Rodríguez,2 Tms,29,73,0,6,2,23,71.2,67,26,79,2.6372100275927775,1.2976747754821605,1.3573954701423645,matched
-rodrifr03,Francisco Rodriguez,Corrective Induction,P,2011,Francisco Rodriguez,LAA,28,10,0,0,0,0,13.2,13,5,7,4.609754060295683,1.3170725886559094,-0.12768863141536713,matched
+rodrifr03,Francisco Rodriguez,Corrective Induction,P,2010,Francisco Rodríguez,NYM,28,53,0,4,3,25,57.1,46,26,67,4.373239906551727,1.521126924017992,1.4813460111618042,matched
+rodrifr03,Francisco Rodriguez,Corrective Induction,P,2011,Francisco Rodríguez,2 Tms,29,73,0,6,2,23,71.2,67,26,79,4.609754060295683,1.3170725886559094,1.3573954701423645,matched
 rodrifr03,Francisco Rodriguez,Corrective Induction,P,2012,Francisco Rodríguez,MIL,30,78,0,2,7,3,72,65,31,72,4.37500046359173,1.3333334746184322,0.25159767270088196,matched
 rodrifr03,Francisco Rodriguez,Corrective Induction,P,2013,Francisco Rodríguez,2 Tms,31,48,0,3,2,10,46.2,42,14,54,2.700000367845858,1.200000163487048,0.28545036166906357,matched
 rodrifr03,Francisco Rodriguez,Corrective Induction,P,2014,Francisco Rodríguez,MIL,32,69,0,5,5,44,68,49,18,73,3.044117988599664,0.985294228194094,-0.6028403043746948,matched
@@ -4691,12 +4689,9 @@ brownke01,Kevin Brown,Corrective Induction,P,1986,Kevin Brown,TEX,21,1,1,1,0,0,5
 brownke01,Kevin Brown,Corrective Induction,P,1987,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 brownke01,Kevin Brown,Corrective Induction,P,1988,Kevin Brown,TEX,23,4,4,1,1,0,23.1,33,8,12,4.242857720900634,1.757143096534606,0.2624906599521637,matched
 brownke01,Kevin Brown,Corrective Induction,P,1989,Kevin Brown,TEX,24,28,28,12,9,0,191,167,70,104,3.3455500054923655,1.2408377954643046,3.0735533237457275,matched
-brownke01,Kevin Brown,Corrective Induction,P,1990,Kevin Brown,2 Tms,24,7,3,1,1,0,23,16,8,12,2.347826086956522,1.0434782608695652,0.2863041628152132,matched
 brownke01,Kevin Brown,Corrective Induction,P,1990,Kevin Brown,TEX,25,26,26,12,10,0,180,175,60,88,3.5999996948242448,1.3055554448822493,2.4373233318328857,matched
-brownke01,Kevin Brown,Corrective Induction,P,1991,Kevin Brown,MIL,25,15,10,2,4,0,63.2,66,34,30,5.513089060289963,1.5706806439572545,0.09612339735031128,matched
-brownke01,Kevin Brown,Corrective Induction,P,1991,Kevin Brown,TEX,26,33,33,9,12,0,210.2,233,90,96,4.400316349456489,1.533227811083545,1.5323556661605835,matched
-brownke01,Kevin Brown,Corrective Induction,P,1992,Kevin Brown,SEA,26,2,0,0,0,0,3,4,3,2,9,2.3333333333333335,-0.11242927610874176,matched
-brownke01,Kevin Brown,Corrective Induction,P,1992,Kevin Brown,TEX,27,35,35,21,11,0,265.2,262,76,173,3.319949938916978,1.2722710650271414,6.320103645324707,matched
+brownke01,Kevin Brown,Corrective Induction,P,1991,Kevin Brown,TEX,26,33,33,9,12,0,210.2,233,90,96,5.513089060289963,1.5706806439572545,1.5323556661605835,matched
+brownke01,Kevin Brown,Corrective Induction,P,1992,Kevin Brown,TEX,27,35,35,21,11,0,265.2,262,76,173,9,2.3333333333333335,6.320103645324707,matched
 brownke01,Kevin Brown,Corrective Induction,P,1993,Kevin Brown,TEX,28,34,34,15,12,0,233,228,74,142,3.592274678111588,1.296137339055794,4.430593490600586,matched
 brownke01,Kevin Brown,Corrective Induction,P,1994,Kevin Brown,TEX,29,26,25,7,9,0,170,218,50,123,4.817647491243923,1.576470729735496,3.4200420826673508,matched
 brownke01,Kevin Brown,Corrective Induction,P,1995,Kevin Brown,BAL,30,26,26,10,9,0,172.1,155,48,117,3.603482050172321,1.1779498489291162,4.513373851776123,matched
@@ -5995,16 +5990,11 @@ wanerpa01,Paul Waner,Official Induction,OF,1943,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 wanerpa01,Paul Waner,Official Induction,OF,1944,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 wanerpa01,Paul Waner,Official Induction,OF,1945,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,missing
 martipe02,Pedro Martinez,Official Induction,P,1992,Pedro Martínez,LAD,20,2,1,0,1,0,8,6,1,8,2.25,0.875,0.3556851102039218,matched
-martipe02,Pedro Martinez,Official Induction,P,1993,Pedro Martinez,SDP,24,32,0,3,1,0,37,23,13,32,2.4324329339997437,0.9729731735998975,0.23444388806819916,matched
-martipe02,Pedro Martinez,Official Induction,P,1993,Pedro Martínez,LAD,21,65,2,10,5,2,107,76,57,119,2.6074767749542223,1.2429907206771025,1.7060377150774002,matched
-martipe02,Pedro Martinez,Official Induction,P,1994,Pedro Martinez,SDP,25,48,1,3,2,3,68.1,52,49,52,2.8975617675397634,1.4780491844521015,0.07853023335337639,matched
-martipe02,Pedro Martinez,Official Induction,P,1994,Pedro Martínez,MON,22,24,23,11,5,1,144.2,115,45,142,3.421658641721276,1.1059906720715236,3.3953209221363068,matched
-martipe02,Pedro Martinez,Official Induction,P,1995,Pedro Martinez,HOU,26,25,0,0,0,0,20.2,29,16,17,7.40322740070564,2.177419823736953,-0.43144649267196655,matched
-martipe02,Pedro Martinez,Official Induction,P,1995,Pedro Martínez,MON,23,30,30,14,10,0,194.2,158,66,174,3.513698538330848,1.1506849014416811,3.0351741313934326,matched
-martipe02,Pedro Martinez,Official Induction,P,1996,Pedro Martinez,2 Tms,27,9,0,0,0,0,10,13,8,9,6.300004956726159,2.100001652242053,-0.17039267346262932,matched
-martipe02,Pedro Martinez,Official Induction,P,1996,Pedro Martínez,MON,24,33,33,13,10,0,216.2,189,70,222,3.696922990137588,1.1953845873228903,5.100093841552734,matched
-martipe02,Pedro Martinez,Official Induction,P,1997,Pedro Martinez,CIN,28,8,0,1,1,0,6.2,8,7,4,9.450008336312973,2.250001984836422,-0.24986810982227323,matched
-martipe02,Pedro Martinez,Official Induction,P,1997,Pedro Martínez,MON,25,31,31,17,8,0,241.1,158,67,305,1.9019336214883868,0.9323204026903856,8.531437873840332,matched
+martipe02,Pedro Martinez,Official Induction,P,1993,Pedro Martínez,LAD,24,65,2,10,5,2,107,76,57,119,2.6074767749542223,1.2429907206771025,1.7060377150774002,matched
+martipe02,Pedro Martinez,Official Induction,P,1994,Pedro Martínez,MON,25,48,23,11,5,3,144.2,115,49,142,3.421658641721276,1.4780491844521015,3.3953209221363068,matched
+martipe02,Pedro Martinez,Official Induction,P,1995,Pedro Martínez,MON,26,30,30,14,10,0,194.2,158,66,174,7.40322740070564,2.177419823736953,3.0351741313934326,matched
+martipe02,Pedro Martinez,Official Induction,P,1996,Pedro Martínez,MON,27,33,33,13,10,0,216.2,189,70,222,6.300004956726159,2.100001652242053,5.100093841552734,matched
+martipe02,Pedro Martinez,Official Induction,P,1997,Pedro Martínez,MON,28,31,31,17,8,0,241.1,158,67,305,9.450008336312973,2.250001984836422,8.531437873840332,matched
 martipe02,Pedro Martinez,Official Induction,P,1998,Pedro Martínez,BOS,26,33,33,19,7,0,233.2,188,67,251,2.8887303222845553,1.091298121751943,5.735383987426758,matched
 martipe02,Pedro Martinez,Official Induction,P,1999,Pedro Martínez,BOS,27,31,29,23,4,0,213.1,160,37,313,2.0671874014288236,0.9234374559670708,11.608582731336355,matched
 martipe02,Pedro Martinez,Official Induction,P,2000,Pedro Martínez,BOS,28,29,29,18,6,0,217,128,32,284,1.7419354838709675,0.7373271889400922,9.374988555908203,matched

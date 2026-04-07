@@ -1,6 +1,7 @@
 # Pulls FanGraphs batting and pitching data, caches it by season, and matches it back to Hall Ledger players.
 suppressPackageStartupMessages({
   library(jsonlite)
+  library(httr)
   library(dplyr)
   library(readr)
   library(stringr)
@@ -102,24 +103,97 @@ fetch_fg_leaders <- function(stats = c("bat", "pit"), season, season_start = sea
     "&pageitems=", pageitems
   )
 
-  tryCatch(
-    {
-      payload <- fromJSON(url)
-      if (!"data" %in% names(payload) || is.null(payload$data)) {
-        return(tibble())
+  last_error <- NULL
+
+  for (attempt in seq_len(3)) {
+    result <- tryCatch(
+      {
+        response <- GET(
+          url,
+          timeout(30),
+          accept_json(),
+          add_headers(
+            Accept = "application/json, text/plain, */*",
+            Referer = "https://www.fangraphs.com/leaders/major-league",
+            Origin = "https://www.fangraphs.com"
+          ),
+          user_agent("HallLedger/1.0 (+https://github.com/D3DataScience/Hall_Ledger)")
+        )
+        stop_for_status(response)
+
+        payload_text <- content(response, as = "text", encoding = "UTF-8")
+        if (!nzchar(trimws(payload_text))) {
+          stop("empty response body")
+        }
+
+        payload <- fromJSON(payload_text)
+        if (!"data" %in% names(payload) || is.null(payload$data)) {
+          return(tibble())
+        }
+
+        as_tibble(payload$data)
+      },
+      error = function(e) {
+        last_error <<- e
+        NULL
       }
-      as_tibble(payload$data)
-    },
-    error = function(e) {
-      message("  ", stats, " ", season, " failed: ", conditionMessage(e))
-      tibble()
+    )
+
+    if (!is.null(result)) {
+      return(result)
     }
-  )
+
+    if (attempt < 3) {
+      message("  ", stats, " ", season, " fetch attempt ", attempt, " failed; retrying...")
+      Sys.sleep(attempt * 2)
+    }
+  }
+
+  message("  ", stats, " ", season, " failed: ", conditionMessage(last_error))
+  tibble()
 }
 
 cache_path_for <- function(stats = c("bat", "pit"), season) {
   stats <- match.arg(stats)
   file.path("data", "fangraphs_cache", paste0("fangraphs_", stats, "_", season, ".csv"))
+}
+
+write_season_cache <- function(stats = c("bat", "pit"), season, fetched_rows, preserve_existing_on_empty = FALSE) {
+  stats <- match.arg(stats)
+  cache_path <- cache_path_for(stats, season)
+  normalizer <- if (stats == "bat") normalize_fg_batting else normalize_fg_pitching
+  normalized_rows <- normalizer(fetched_rows)
+
+  if (nrow(normalized_rows) > 0) {
+    write_csv(normalized_rows, cache_path)
+    return(invisible(TRUE))
+  }
+
+  if (preserve_existing_on_empty && file.exists(cache_path) && file.info(cache_path)$size > 0) {
+    existing_rows <- tryCatch(
+      {
+        read_csv(cache_path, show_col_types = FALSE) %>%
+          ensure_fg_cache_columns(stats)
+      },
+      error = function(e) {
+        if (stats == "bat") normalize_fg_batting(tibble()) else normalize_fg_pitching(tibble())
+      }
+    )
+
+    if (nrow(existing_rows) > 0) {
+      message("    keeping existing ", stats, " ", season, " cache because refresh returned no usable rows")
+      return(invisible(FALSE))
+    }
+  }
+
+  stop(
+    "Unable to refresh FanGraphs ",
+    if (stats == "bat") "batting" else "pitching",
+    " data for ",
+    season,
+    " and no usable cached season was available to preserve.",
+    call. = FALSE
+  )
 }
 
 write_chunk_to_year_cache <- function(df, stats = c("bat", "pit"), years) {
@@ -400,8 +474,13 @@ walk(years_to_pull[!years_to_pull %in% missing_batting_years], function(year_val
 })
 walk(missing_batting_years, function(year_value) {
   message("  batting ", year_value, " (fetch)")
-  season_rows <- fetch_fg_leaders("bat", season = year_value, season_start = year_value) %>% normalize_fg_batting()
-  write_csv(season_rows, cache_path_for("bat", year_value))
+  season_rows <- fetch_fg_leaders("bat", season = year_value, season_start = year_value)
+  write_season_cache(
+    "bat",
+    year_value,
+    season_rows,
+    preserve_existing_on_empty = (refresh_current_season_cache && year_value == current_season)
+  )
 })
 
 message("Building FanGraphs pitching season cache for ", length(years_to_pull), " years...")
@@ -410,8 +489,13 @@ walk(years_to_pull[!years_to_pull %in% missing_pitching_years], function(year_va
 })
 walk(missing_pitching_years, function(year_value) {
   message("  pitching ", year_value, " (fetch)")
-  season_rows <- fetch_fg_leaders("pit", season = year_value, season_start = year_value) %>% normalize_fg_pitching()
-  write_csv(season_rows, cache_path_for("pit", year_value))
+  season_rows <- fetch_fg_leaders("pit", season = year_value, season_start = year_value)
+  write_season_cache(
+    "pit",
+    year_value,
+    season_rows,
+    preserve_existing_on_empty = (refresh_current_season_cache && year_value == current_season)
+  )
 })
 
 batting_seasons <- map_dfr(years_to_pull, function(year_value) {
